@@ -1,0 +1,2735 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_hub_action_type_definition">
+    <sys_hub_action_type_definition action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <active>true</active>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <ih_action>false</ih_action>
+        <internal_name>calculate_server_carbon_waste</internal_name>
+        <label_cache>[{"name":"{{action.cpu_input}}","label":"action➛CPU Input","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.carbon_factor}}","label":"action➛Carbon Factor","type":"action","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f889fc43-b8c2-4e1a-9cf2-63262c4ebd80].total_co2e_lbs}}","label":"step➛Script step➛total_co2e_lbs","type":"step","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Decimal","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"decimal","uiUniqueId":"ee78f23f-03fb-4de8-ae78-24d342aef8b8"}},{"name":"{{step[f889fc43-b8c2-4e1a-9cf2-63262c4ebd80].server_count}}","label":"step➛Script step➛server_count","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"37166b3f-94f5-4a88-849d-bf27f515d062"}}]</label_cache>
+        <master_snapshot>b02079a5acc703107f44648dc013a4f0</master_snapshot>
+        <master_snapshot_digest/>
+        <name>Calculate Server Carbon Waste</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <pre_compiled>false</pre_compiled>
+        <state>published</state>
+        <sys_class_name>sys_hub_action_type_definition</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:14:03</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>c07e2125acc703107f44648dc013a48b</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Calculate Server Carbon Waste</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name>sys_hub_action_type_definition_c07e2125acc703107f44648dc013a48b</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:31</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_definition>
+    <sys_translated_text action="delete_multiple" query="documentkey=c07e2125acc703107f44648dc013a48b"/>
+    <sys_variable_value action="delete_multiple" query="document_key=c07e2125acc703107f44648dc013a48b"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>c07e2125acc703107f44648dc013a48b</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:19</sys_created_on>
+        <sys_id>332fa165acc703107f44648dc013a4ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:19</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">3b2fa165acc703107f44648dc013a4a0</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>c07e2125acc703107f44648dc013a48b</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:02</sys_created_on>
+        <sys_id>5e00b5a5acc703107f44648dc013a40d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:02</sys_updated_on>
+        <value/>
+        <variable display_value="Idle Server Count">b90075a5acc703107f44648dc013a4a3</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>c07e2125acc703107f44648dc013a48b</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:02</sys_created_on>
+        <sys_id>9a00b5a5acc703107f44648dc013a40d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:02</sys_updated_on>
+        <value/>
+        <variable display_value="Total CO2e Waste">790075a5acc703107f44648dc013a49a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_definition</document>
+        <document_key>c07e2125acc703107f44648dc013a48b</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:19</sys_created_on>
+        <sys_id>f32fa165acc703107f44648dc013a4ac</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:19</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">332fa165acc703107f44648dc013a465</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=c07e2125acc703107f44648dc013a48b"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>server_count</field>
+        <id>c07e2125acc703107f44648dc013a48b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:02</sys_created_on>
+        <sys_id>5600b5a5acc703107f44648dc013a40d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:23</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c07e2125acc703107f44648dc013a48b</table>
+        <value>{{step[f889fc43-b8c2-4e1a-9cf2-63262c4ebd80].server_count}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>total_co2e_lbs</field>
+        <id>c07e2125acc703107f44648dc013a48b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:02</sys_created_on>
+        <sys_id>1a00b5a5acc703107f44648dc013a40d</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:23</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c07e2125acc703107f44648dc013a48b</table>
+        <value>{{step[f889fc43-b8c2-4e1a-9cf2-63262c4ebd80].total_co2e_lbs}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>c07e2125acc703107f44648dc013a48b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:19</sys_created_on>
+        <sys_id>bf2fa165acc703107f44648dc013a4ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:19</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c07e2125acc703107f44648dc013a48b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>c07e2125acc703107f44648dc013a48b</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:19</sys_created_on>
+        <sys_id>fb2fa165acc703107f44648dc013a4ab</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:19</sys_updated_on>
+        <table>var__m_sys_hub_action_output_c07e2125acc703107f44648dc013a48b</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=c07e2125acc703107f44648dc013a48b^sys_idNOT IN2b2fa165acc703107f44648dc013a434"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Calculate Server Carbon Waste">c07e2125acc703107f44648dc013a48b</action>
+        <cid>f889fc43-b8c2-4e1a-9cf2-63262c4ebd80</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:17</sys_created_on>
+        <sys_id>2b2fa165acc703107f44648dc013a434</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:18</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=2b2fa165acc703107f44648dc013a434"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2b2fa165acc703107f44648dc013a434</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:18</sys_created_on>
+        <sys_id>3b2fa165acc703107f44648dc013a462</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:18</sys_updated_on>
+        <value/>
+        <variable display_value="">632fa165acc703107f44648dc013a43a</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2b2fa165acc703107f44648dc013a434</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:18</sys_created_on>
+        <sys_id>672fa165acc703107f44648dc013a461</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:18</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    var threshold = inputs.cpu_thresh || 5;&#13;
+    var factor = parseFloat(inputs.carbon_factor) || 0.85;&#13;
+    &#13;
+    var totalWatts = 0;&#13;
+    var serverCount = 0;&#13;
+    &#13;
+    // Query CMDB for active servers below the CPU threshold&#13;
+    var grServer = new GlideRecord('cmdb_ci_server');&#13;
+    grServer.addQuery('install_status', 1); // In Use&#13;
+    grServer.addQuery('cpu_utilization', '&lt;=', threshold);&#13;
+    grServer.query();&#13;
+    &#13;
+    while (grServer.next()) {&#13;
+        serverCount++;&#13;
+        var serverWatts = grServer.getValue('power_wattage') ? parseFloat(grServer.getValue('power_wattage')) : 400;&#13;
+        totalWatts += serverWatts;&#13;
+    }&#13;
+    &#13;
+    // Convert Watts to Monthly kWh and apply carbon factor&#13;
+    var monthlyKWh = (totalWatts / 1000) * 24 * 30;&#13;
+    &#13;
+    outputs.total_co2e_lbs = monthlyKWh * factor;&#13;
+    outputs.server_count = serverCount;&#13;
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2b2fa165acc703107f44648dc013a434</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:18</sys_created_on>
+        <sys_id>772fa165acc703107f44648dc013a462</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:18</sys_updated_on>
+        <value/>
+        <variable display_value="">6b2fa165acc703107f44648dc013a43d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>2b2fa165acc703107f44648dc013a434</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:18</sys_created_on>
+        <sys_id>eb2fa165acc703107f44648dc013a460</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:18</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=2b2fa165acc703107f44648dc013a434"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>2b2fa165acc703107f44648dc013a434</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:18</sys_created_on>
+        <sys_id>632fa165acc703107f44648dc013a460</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:18</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>carbon_factor</field>
+        <id>2b2fa165acc703107f44648dc013a434</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:18</sys_created_on>
+        <sys_id>232fa165acc703107f44648dc013a462</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:18</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_2b2fa165acc703107f44648dc013a434</table>
+        <value>{{action.carbon_factor}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>cpu_thresh</field>
+        <id>2b2fa165acc703107f44648dc013a434</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:18</sys_created_on>
+        <sys_id>e32fa165acc703107f44648dc013a462</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:18</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_2b2fa165acc703107f44648dc013a434</table>
+        <value>{{action.cpu_input}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>2b2fa165acc703107f44648dc013a434</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:18</sys_created_on>
+        <sys_id>6b2fa165acc703107f44648dc013a460</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:18</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_2b2fa165acc703107f44648dc013a434^id=2b2fa165acc703107f44648dc013a434"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=2b2fa165acc703107f44648dc013a434"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=2b2fa165acc703107f44648dc013a434"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=2b2fa165acc703107f44648dc013a434^sys_idNOT IN632fa165acc703107f44648dc013a43a,6b2fa165acc703107f44648dc013a43d"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>cpu_thresh</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">2b2fa165acc703107f44648dc013a434</model>
+        <model_id>2b2fa165acc703107f44648dc013a434</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_2b2fa165acc703107f44648dc013a434</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:18</sys_created_on>
+        <sys_id>632fa165acc703107f44648dc013a43a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=decimal,uiTypeLabel=Decimal</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>carbon_factor</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Decimal">decimal</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>15</max_length>
+        <model display_value="Script step">2b2fa165acc703107f44648dc013a434</model>
+        <model_id>2b2fa165acc703107f44648dc013a434</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_2b2fa165acc703107f44648dc013a434</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:18</sys_created_on>
+        <sys_id>6b2fa165acc703107f44648dc013a43d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=2b2fa165acc703107f44648dc013a434^sys_idNOT IN31bfad65acc703107f44648dc013a46f,7dbfad65acc703107f44648dc013a473"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=decimal,uiTypeLabel=Decimal,uiUniqueId=ee78f23f-03fb-4de8-ae78-24d342aef8b8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>total_co2e_lbs</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Decimal">decimal</internal_type>
+        <label>total_co2e_lbs</label>
+        <mandatory>false</mandatory>
+        <max_length>15</max_length>
+        <model display_value="Script step">2b2fa165acc703107f44648dc013a434</model>
+        <model_id>2b2fa165acc703107f44648dc013a434</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_2b2fa165acc703107f44648dc013a434</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:19:38</sys_created_on>
+        <sys_id>31bfad65acc703107f44648dc013a46f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:19:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=37166b3f-94f5-4a88-849d-bf27f515d062</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>server_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>server_count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">2b2fa165acc703107f44648dc013a434</model>
+        <model_id>2b2fa165acc703107f44648dc013a434</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_2b2fa165acc703107f44648dc013a434</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:19:38</sys_created_on>
+        <sys_id>7dbfad65acc703107f44648dc013a473</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:19:38</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=2b2fa165acc703107f44648dc013a434"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>total_co2e_lbs</element>
+        <help/>
+        <hint/>
+        <label>total_co2e_lbs</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_2b2fa165acc703107f44648dc013a434</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:19:38</sys_created_on>
+        <sys_id>7dbfad65acc703107f44648dc013a472</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:19:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>server_count</element>
+        <help/>
+        <hint/>
+        <label>server_count</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_2b2fa165acc703107f44648dc013a434</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:19:38</sys_created_on>
+        <sys_id>b5bfad65acc703107f44648dc013a476</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:19:38</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=c07e2125acc703107f44648dc013a48b^sys_idNOT INd72fe525acc703107f44648dc013a4f3,db2f6165acc703107f44648dc013a4ef"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=5b1a1e6e-b251-466c-b4f2-716d409f0c97</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>cpu_input</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>CPU Input</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Calculate Server Carbon Waste">c07e2125acc703107f44648dc013a48b</model>
+        <model_id>c07e2125acc703107f44648dc013a48b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_c07e2125acc703107f44648dc013a48b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:17</sys_created_on>
+        <sys_id>d72fe525acc703107f44648dc013a4f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d72fe525acc703107f44648dc013a4f3"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=decimal,uiTypeLabel=Decimal,uiUniqueId=f8313bba-bba8-46a1-884a-4872f3647787</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>carbon_factor</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Decimal">decimal</internal_type>
+        <label>Carbon Factor</label>
+        <mandatory>false</mandatory>
+        <max_length>15</max_length>
+        <model display_value="Calculate Server Carbon Waste">c07e2125acc703107f44648dc013a48b</model>
+        <model_id>c07e2125acc703107f44648dc013a48b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_c07e2125acc703107f44648dc013a48b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:17</sys_created_on>
+        <sys_id>db2f6165acc703107f44648dc013a4ef</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:17</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=db2f6165acc703107f44648dc013a4ef"/>
+    <sys_hub_action_output action="delete_multiple" query="model=c07e2125acc703107f44648dc013a48b^sys_idNOT IN332fa165acc703107f44648dc013a465,3b2fa165acc703107f44648dc013a4a0,790075a5acc703107f44648dc013a49a,b90075a5acc703107f44648dc013a4a3"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=b27819c4-e327-465a-9530-94da83e0e197</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Calculate Server Carbon Waste">c07e2125acc703107f44648dc013a48b</model>
+        <model_id>c07e2125acc703107f44648dc013a48b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_c07e2125acc703107f44648dc013a48b</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:18</sys_created_on>
+        <sys_id>332fa165acc703107f44648dc013a465</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:18</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=332fa165acc703107f44648dc013a465"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=332fa165acc703107f44648dc013a465"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=ca7ef95f-2874-4be6-aec0-7d0b74affc3f,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Calculate Server Carbon Waste">c07e2125acc703107f44648dc013a48b</model>
+        <model_id>c07e2125acc703107f44648dc013a48b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_c07e2125acc703107f44648dc013a48b</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:19</sys_created_on>
+        <sys_id>3b2fa165acc703107f44648dc013a4a0</sys_id>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:28</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=3b2fa165acc703107f44648dc013a4a0"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=3b2fa165acc703107f44648dc013a4a0"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=decimal,uiTypeLabel=Decimal,uiUniqueId=04faab03-87be-46d6-baad-b75a9cf54058</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>total_co2e_lbs</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Decimal">decimal</internal_type>
+        <label>Total CO2e Waste</label>
+        <mandatory>false</mandatory>
+        <max_length>15</max_length>
+        <model display_value="Calculate Server Carbon Waste">c07e2125acc703107f44648dc013a48b</model>
+        <model_id>c07e2125acc703107f44648dc013a48b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_c07e2125acc703107f44648dc013a48b</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:20:59</sys_created_on>
+        <sys_id>790075a5acc703107f44648dc013a49a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:20:59</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=790075a5acc703107f44648dc013a49a"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=790075a5acc703107f44648dc013a49a"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=2fde21e1-cb42-411c-a437-c2cae0a535c5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>server_count</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Idle Server Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Calculate Server Carbon Waste">c07e2125acc703107f44648dc013a48b</model>
+        <model_id>c07e2125acc703107f44648dc013a48b</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_output_c07e2125acc703107f44648dc013a48b</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:00</sys_created_on>
+        <sys_id>b90075a5acc703107f44648dc013a4a3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=b90075a5acc703107f44648dc013a4a3"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=b90075a5acc703107f44648dc013a4a3"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=c07e2125acc703107f44648dc013a48b"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=c07e2125acc703107f44648dc013a48b^sys_idNOT INbb2fa165acc703107f44648dc013a4ad"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Calculate Server Carbon Waste">c07e2125acc703107f44648dc013a48b</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:19</sys_created_on>
+        <sys_id>bb2fa165acc703107f44648dc013a4ad</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:19</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=bb2fa165acc703107f44648dc013a4ad"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>carbon_factor</element>
+        <help/>
+        <hint/>
+        <label>Carbon Factor</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c07e2125acc703107f44648dc013a48b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:17</sys_created_on>
+        <sys_id>df2f6165acc703107f44648dc013a4f2</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>cpu_input</element>
+        <help/>
+        <hint/>
+        <label>CPU Input</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_c07e2125acc703107f44648dc013a48b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:17</sys_created_on>
+        <sys_id>df2fe525acc703107f44648dc013a4f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:17</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_c07e2125acc703107f44648dc013a48b"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_c07e2125acc703107f44648dc013a48b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:18</sys_created_on>
+        <sys_id>3b2fa165acc703107f44648dc013a469</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:18</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>total_co2e_lbs</element>
+        <help/>
+        <hint/>
+        <label>Total CO2e Waste</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_c07e2125acc703107f44648dc013a48b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:00</sys_created_on>
+        <sys_id>3d0075a5acc703107f44648dc013a49d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>server_count</element>
+        <help/>
+        <hint/>
+        <label>Idle Server Count</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_c07e2125acc703107f44648dc013a48b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:00</sys_created_on>
+        <sys_id>bd0075a5acc703107f44648dc013a4a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_c07e2125acc703107f44648dc013a48b</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:17:19</sys_created_on>
+        <sys_id>bf2fa165acc703107f44648dc013a4a6</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:17:19</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_c07e2125acc703107f44648dc013a48b"/>
+    <sys_hub_action_plan action="delete_multiple" query="action_id=c07e2125acc703107f44648dc013a48b^sys_idNOT INe520b9a5acc703107f44648dc013a4e9"/>
+    <sys_hub_action_plan action="INSERT_OR_UPDATE">
+        <action_id display_value="Calculate Server Carbon Waste">c07e2125acc703107f44648dc013a48b</action_id>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"e520b9a5acc703107f44648dc013a4e9","name":"plan","plan_signature":null}}</plan>
+        <snapshot>5920b9a5acc703107f44648dc013a482</snapshot>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:32</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>e520b9a5acc703107f44648dc013a4e9</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_overrides/>
+        <sys_scope/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:32</sys_updated_on>
+    </sys_hub_action_plan>
+    <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
+        <access>public</access>
+        <acls/>
+        <action_status/>
+        <action_template/>
+        <annotation/>
+        <attributes>{labelCacheCleanUpExecuted=true}</attributes>
+        <authored_on_release_version>27000</authored_on_release_version>
+        <callable_by_client_api>false</callable_by_client_api>
+        <category/>
+        <copied_from/>
+        <copied_from_name/>
+        <description/>
+        <flow_priority/>
+        <internal_name>calculate_server_carbon_waste</internal_name>
+        <label_cache>[{"name":"{{action.cpu_input}}","label":"action➛CPU Input","type":"action","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.carbon_factor}}","label":"action➛Carbon Factor","type":"action","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[f889fc43-b8c2-4e1a-9cf2-63262c4ebd80].total_co2e_lbs}}","label":"step➛Script step➛total_co2e_lbs","type":"step","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Decimal","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"decimal","uiUniqueId":"ee78f23f-03fb-4de8-ae78-24d342aef8b8"}},{"name":"{{step[f889fc43-b8c2-4e1a-9cf2-63262c4ebd80].server_count}}","label":"step➛Script step➛server_count","type":"step","ref":"","reference_display":"","base_type":"integer","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"37166b3f-94f5-4a88-849d-bf27f515d062"}}]</label_cache>
+        <master>true</master>
+        <name>Calculate Server Carbon Waste</name>
+        <natlang/>
+        <outputs/>
+        <outputs/>
+        <parent_action display_value="Calculate Server Carbon Waste">c07e2125acc703107f44648dc013a48b</parent_action>
+        <sys_class_name>sys_hub_action_type_snapshot</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:29</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b02079a5acc703107f44648dc013a4f0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_overrides/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:29</sys_updated_on>
+        <system_level>false</system_level>
+        <type/>
+    </sys_hub_action_type_snapshot>
+    <sys_translated_text action="delete_multiple" query="documentkey=b02079a5acc703107f44648dc013a4f0"/>
+    <sys_variable_value action="delete_multiple" query="document_key=b02079a5acc703107f44648dc013a4f0"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>b02079a5acc703107f44648dc013a4f0</document_key>
+        <order>4</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:31</sys_created_on>
+        <sys_id>1920b9a5acc703107f44648dc013a480</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:31</sys_updated_on>
+        <value/>
+        <variable display_value="Idle Server Count">d520b9a5acc703107f44648dc013a45e</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>b02079a5acc703107f44648dc013a4f0</document_key>
+        <order>3</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:31</sys_created_on>
+        <sys_id>5520b9a5acc703107f44648dc013a480</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:31</sys_updated_on>
+        <value>0</value>
+        <variable display_value="Don't Treat as Error">c120b9a5acc703107f44648dc013a458</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>b02079a5acc703107f44648dc013a4f0</document_key>
+        <order>2</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:31</sys_created_on>
+        <sys_id>9120b9a5acc703107f44648dc013a480</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:31</sys_updated_on>
+        <value/>
+        <variable display_value="Total CO2e Waste">0120b9a5acc703107f44648dc013a454</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_action_type_snapshot</document>
+        <document_key>b02079a5acc703107f44648dc013a4f0</document_key>
+        <order>1</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:31</sys_created_on>
+        <sys_id>d920b9a5acc703107f44648dc013a480</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:31</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
+        <variable display_value="Action Status">c120b9a5acc703107f44648dc013a44f</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=b02079a5acc703107f44648dc013a4f0"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>server_count</field>
+        <id>b02079a5acc703107f44648dc013a4f0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:31</sys_created_on>
+        <sys_id>d520b9a5acc703107f44648dc013a47f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:31</sys_updated_on>
+        <table>var__m_sys_hub_action_output_b02079a5acc703107f44648dc013a4f0</table>
+        <value>{{step[f889fc43-b8c2-4e1a-9cf2-63262c4ebd80].server_count}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>total_co2e_lbs</field>
+        <id>b02079a5acc703107f44648dc013a4f0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:31</sys_created_on>
+        <sys_id>9920b9a5acc703107f44648dc013a47f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:31</sys_updated_on>
+        <table>var__m_sys_hub_action_output_b02079a5acc703107f44648dc013a4f0</table>
+        <value>{{step[f889fc43-b8c2-4e1a-9cf2-63262c4ebd80].total_co2e_lbs}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__action_status__</field>
+        <id>b02079a5acc703107f44648dc013a4f0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:31</sys_created_on>
+        <sys_id>1120b9a5acc703107f44648dc013a480</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:31</sys_updated_on>
+        <table>var__m_sys_hub_action_output_b02079a5acc703107f44648dc013a4f0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>__dont_treat_as_error__</field>
+        <id>b02079a5acc703107f44648dc013a4f0</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:31</sys_created_on>
+        <sys_id>5d20b9a5acc703107f44648dc013a47f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:31</sys_updated_on>
+        <table>var__m_sys_hub_action_output_b02079a5acc703107f44648dc013a4f0</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_hub_step_instance action="delete_multiple" query="action=b02079a5acc703107f44648dc013a4f0^sys_idNOT IN4d20b9a5acc703107f44648dc013a40c"/>
+    <sys_hub_step_instance action="INSERT_OR_UPDATE">
+        <action display_value="Calculate Server Carbon Waste">b02079a5acc703107f44648dc013a4f0</action>
+        <cid>f889fc43-b8c2-4e1a-9cf2-63262c4ebd80</cid>
+        <error_handling_type>1</error_handling_type>
+        <extended_inputs/>
+        <extended_inputs/>
+        <extended_outputs/>
+        <icon/>
+        <inputs/>
+        <label>Script step</label>
+        <order>1</order>
+        <outputs/>
+        <section/>
+        <step_type display_value="Script">106afb6647032200b4fad7527c9a71e7</step_type>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:29</sys_created_on>
+        <sys_id>4d20b9a5acc703107f44648dc013a40c</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+    </sys_hub_step_instance>
+    <sys_variable_value action="delete_multiple" query="document_key=4d20b9a5acc703107f44648dc013a40c"/>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4d20b9a5acc703107f44648dc013a40c</document_key>
+        <order>400</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>0520b9a5acc703107f44648dc013a44b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <value>35aa573fd7802200bdbaee5b5e610375</value>
+        <variable display_value="MID Application">f5e56d79b3101300176b051a16a8dce4</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4d20b9a5acc703107f44648dc013a40c</document_key>
+        <order>0</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>0920b9a5acc703107f44648dc013a44c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <value/>
+        <variable display_value="cpu_thresh">8920b9a5acc703107f44648dc013a410</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4d20b9a5acc703107f44648dc013a40c</document_key>
+        <order>100</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>4520b9a5acc703107f44648dc013a44c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <value/>
+        <variable display_value="carbon_factor">4920b9a5acc703107f44648dc013a42d</variable>
+    </sys_variable_value>
+    <sys_variable_value action="INSERT_OR_UPDATE">
+        <document>sys_hub_step_instance</document>
+        <document_key>4d20b9a5acc703107f44648dc013a40c</document_key>
+        <order>600</order>
+        <sys_class_name>sys_variable_value</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>c520b9a5acc703107f44648dc013a44b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <value>(function execute(inputs, outputs) {&#13;
+    var threshold = inputs.cpu_thresh || 5;&#13;
+    var factor = parseFloat(inputs.carbon_factor) || 0.85;&#13;
+    &#13;
+    var totalWatts = 0;&#13;
+    var serverCount = 0;&#13;
+    &#13;
+    // Query CMDB for active servers below the CPU threshold&#13;
+    var grServer = new GlideRecord('cmdb_ci_server');&#13;
+    grServer.addQuery('install_status', 1); // In Use&#13;
+    grServer.addQuery('cpu_utilization', '&lt;=', threshold);&#13;
+    grServer.query();&#13;
+    &#13;
+    while (grServer.next()) {&#13;
+        serverCount++;&#13;
+        var serverWatts = grServer.getValue('power_wattage') ? parseFloat(grServer.getValue('power_wattage')) : 400;&#13;
+        totalWatts += serverWatts;&#13;
+    }&#13;
+    &#13;
+    // Convert Watts to Monthly kWh and apply carbon factor&#13;
+    var monthlyKWh = (totalWatts / 1000) * 24 * 30;&#13;
+    &#13;
+    outputs.total_co2e_lbs = monthlyKWh * factor;&#13;
+    outputs.server_count = serverCount;&#13;
+})(inputs, outputs);</value>
+        <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
+    </sys_variable_value>
+    <sys_element_mapping action="delete_multiple" query="id=4d20b9a5acc703107f44648dc013a40c"/>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>application</field>
+        <id>4d20b9a5acc703107f44648dc013a40c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>cd20b9a5acc703107f44648dc013a44a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>carbon_factor</field>
+        <id>4d20b9a5acc703107f44648dc013a40c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>0120b9a5acc703107f44648dc013a44c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_4d20b9a5acc703107f44648dc013a40c</table>
+        <value>{{action.carbon_factor}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>cpu_thresh</field>
+        <id>4d20b9a5acc703107f44648dc013a40c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>c120b9a5acc703107f44648dc013a44c</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_4d20b9a5acc703107f44648dc013a40c</table>
+        <value>{{action.cpu_input}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>script</field>
+        <id>4d20b9a5acc703107f44648dc013a40c</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>8120b9a5acc703107f44648dc013a44b</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <table>var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7</table>
+        <value/>
+    </sys_element_mapping>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_4d20b9a5acc703107f44648dc013a40c^id=4d20b9a5acc703107f44648dc013a40c"/>
+    <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=4d20b9a5acc703107f44648dc013a40c"/>
+    <sys_translated_text action="delete_multiple" query="documentkey=4d20b9a5acc703107f44648dc013a40c"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=4d20b9a5acc703107f44648dc013a40c^sys_idNOT IN4920b9a5acc703107f44648dc013a42d,8920b9a5acc703107f44648dc013a410"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=decimal,uiTypeLabel=Decimal</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>carbon_factor</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Decimal">decimal</internal_type>
+        <label>carbon_factor</label>
+        <mandatory>true</mandatory>
+        <max_length>15</max_length>
+        <model display_value="Script step">4d20b9a5acc703107f44648dc013a40c</model>
+        <model_id>4d20b9a5acc703107f44648dc013a40c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_4d20b9a5acc703107f44648dc013a40c</name>
+        <next_element/>
+        <order>100</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:29</sys_created_on>
+        <sys_id>4920b9a5acc703107f44648dc013a42d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>cpu_thresh</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>cpu_thresh</label>
+        <mandatory>true</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">4d20b9a5acc703107f44648dc013a40c</model>
+        <model_id>4d20b9a5acc703107f44648dc013a40c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_4d20b9a5acc703107f44648dc013a40c</name>
+        <next_element/>
+        <order>0</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:29</sys_created_on>
+        <sys_id>8920b9a5acc703107f44648dc013a410</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_output action="delete_multiple" query="model=4d20b9a5acc703107f44648dc013a40c^sys_idNOT IN4920b9a5acc703107f44648dc013a431,8920b9a5acc703107f44648dc013a435"/>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=decimal,uiTypeLabel=Decimal,uiUniqueId=ee78f23f-03fb-4de8-ae78-24d342aef8b8</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>total_co2e_lbs</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Decimal">decimal</internal_type>
+        <label>total_co2e_lbs</label>
+        <mandatory>false</mandatory>
+        <max_length>15</max_length>
+        <model display_value="Script step">4d20b9a5acc703107f44648dc013a40c</model>
+        <model_id>4d20b9a5acc703107f44648dc013a40c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_4d20b9a5acc703107f44648dc013a40c</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>4920b9a5acc703107f44648dc013a431</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_step_ext_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=37166b3f-94f5-4a88-849d-bf27f515d062</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>server_count</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>server_count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Script step">4d20b9a5acc703107f44648dc013a40c</model>
+        <model_id>4d20b9a5acc703107f44648dc013a40c</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_output_4d20b9a5acc703107f44648dc013a40c</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>8920b9a5acc703107f44648dc013a435</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_output>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=4d20b9a5acc703107f44648dc013a40c"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>server_count</element>
+        <help/>
+        <hint/>
+        <label>server_count</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_4d20b9a5acc703107f44648dc013a40c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>8120b9a5acc703107f44648dc013a438</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>total_co2e_lbs</element>
+        <help/>
+        <hint/>
+        <label>total_co2e_lbs</label>
+        <language>en</language>
+        <name>var__m_sys_hub_step_ext_output_4d20b9a5acc703107f44648dc013a40c</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>8920b9a5acc703107f44648dc013a434</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_hub_action_input action="delete_multiple" query="model=b02079a5acc703107f44648dc013a4f0^sys_idNOT IN382079a5acc703107f44648dc013a4f3,742079a5acc703107f44648dc013a4f8"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=5b1a1e6e-b251-466c-b4f2-716d409f0c97</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>cpu_input</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>CPU Input</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Calculate Server Carbon Waste">b02079a5acc703107f44648dc013a4f0</model>
+        <model_id>b02079a5acc703107f44648dc013a4f0</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_b02079a5acc703107f44648dc013a4f0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:29</sys_created_on>
+        <sys_id>382079a5acc703107f44648dc013a4f3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=382079a5acc703107f44648dc013a4f3"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=decimal,uiTypeLabel=Decimal,uiUniqueId=f8313bba-bba8-46a1-884a-4872f3647787</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>carbon_factor</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Decimal">decimal</internal_type>
+        <label>Carbon Factor</label>
+        <mandatory>false</mandatory>
+        <max_length>15</max_length>
+        <model display_value="Calculate Server Carbon Waste">b02079a5acc703107f44648dc013a4f0</model>
+        <model_id>b02079a5acc703107f44648dc013a4f0</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_b02079a5acc703107f44648dc013a4f0</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:29</sys_created_on>
+        <sys_id>742079a5acc703107f44648dc013a4f8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:29</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=742079a5acc703107f44648dc013a4f8"/>
+    <sys_hub_action_output action="delete_multiple" query="model=b02079a5acc703107f44648dc013a4f0^sys_idNOT IN0120b9a5acc703107f44648dc013a454,c120b9a5acc703107f44648dc013a44f,c120b9a5acc703107f44648dc013a458,d520b9a5acc703107f44648dc013a45e"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=decimal,uiTypeLabel=Decimal,uiUniqueId=04faab03-87be-46d6-baad-b75a9cf54058</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>total_co2e_lbs</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Decimal">decimal</internal_type>
+        <label>Total CO2e Waste</label>
+        <mandatory>false</mandatory>
+        <max_length>15</max_length>
+        <model display_value="Calculate Server Carbon Waste">b02079a5acc703107f44648dc013a4f0</model>
+        <model_id>b02079a5acc703107f44648dc013a4f0</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_b02079a5acc703107f44648dc013a4f0</name>
+        <next_element/>
+        <order>2</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>0120b9a5acc703107f44648dc013a454</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=0120b9a5acc703107f44648dc013a454"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=0120b9a5acc703107f44648dc013a454"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,co_type_name=FDACTIONSTATUS,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=object,uiTypeLabel=Object,uiUniqueId=b27819c4-e327-465a-9530-94da83e0e197</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__action_status__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="String">string</internal_type>
+        <label>Action Status</label>
+        <mandatory>false</mandatory>
+        <max_length>65000</max_length>
+        <model display_value="Calculate Server Carbon Waste">b02079a5acc703107f44648dc013a4f0</model>
+        <model_id>b02079a5acc703107f44648dc013a4f0</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_b02079a5acc703107f44648dc013a4f0</name>
+        <next_element/>
+        <order>1</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>c120b9a5acc703107f44648dc013a44f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c120b9a5acc703107f44648dc013a44f"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c120b9a5acc703107f44648dc013a44f"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>action_error_output=true,element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=boolean,uiTypeLabel=True/False,uiUniqueId=ca7ef95f-2874-4be6-aec0-7d0b74affc3f,visible_in_ui=false</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value>true</default_value>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>__dont_treat_as_error__</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="">boolean</internal_type>
+        <label>Don't Treat as Error</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Calculate Server Carbon Waste">b02079a5acc703107f44648dc013a4f0</model>
+        <model_id>b02079a5acc703107f44648dc013a4f0</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_b02079a5acc703107f44648dc013a4f0</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>c120b9a5acc703107f44648dc013a458</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c120b9a5acc703107f44648dc013a458"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=c120b9a5acc703107f44648dc013a458"/>
+    <sys_hub_action_output action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=integer,uiTypeLabel=Integer,uiUniqueId=2fde21e1-cb42-411c-a437-c2cae0a535c5</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>server_count</element>
+        <element_prototype/>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_link/>
+        <internal_type display_value="Integer">integer</internal_type>
+        <label>Idle Server Count</label>
+        <mandatory>false</mandatory>
+        <max_length>40</max_length>
+        <model display_value="Calculate Server Carbon Waste">b02079a5acc703107f44648dc013a4f0</model>
+        <model_id>b02079a5acc703107f44648dc013a4f0</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_output_b02079a5acc703107f44648dc013a4f0</name>
+        <next_element/>
+        <order>4</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference/>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_output</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>d520b9a5acc703107f44648dc013a45e</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_output>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=d520b9a5acc703107f44648dc013a45e"/>
+    <sys_hub_input_scripts action="delete_multiple" query="instance=d520b9a5acc703107f44648dc013a45e"/>
+    <sys_hub_pill_compound action="delete_multiple" query="attached_to=b02079a5acc703107f44648dc013a4f0"/>
+    <sys_hub_action_status_metadata action="delete_multiple" query="action_type_id=b02079a5acc703107f44648dc013a4f0^sys_idNOT IN9520b9a5acc703107f44648dc013a482"/>
+    <sys_hub_action_status_metadata action="INSERT_OR_UPDATE">
+        <action_type_id display_value="Calculate Server Carbon Waste">b02079a5acc703107f44648dc013a4f0</action_type_id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:31</sys_created_on>
+        <sys_id>9520b9a5acc703107f44648dc013a482</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:31</sys_updated_on>
+    </sys_hub_action_status_metadata>
+    <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=9520b9a5acc703107f44648dc013a482"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>cpu_input</element>
+        <help/>
+        <hint/>
+        <label>CPU Input</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_b02079a5acc703107f44648dc013a4f0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:29</sys_created_on>
+        <sys_id>742079a5acc703107f44648dc013a4f7</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>carbon_factor</element>
+        <help/>
+        <hint/>
+        <label>Carbon Factor</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_b02079a5acc703107f44648dc013a4f0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:29</sys_created_on>
+        <sys_id>cd20b9a5acc703107f44648dc013a407</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:29</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_input_b02079a5acc703107f44648dc013a4f0"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__action_status__</element>
+        <help/>
+        <hint/>
+        <label>Action Status</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_b02079a5acc703107f44648dc013a4f0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>0120b9a5acc703107f44648dc013a453</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>total_co2e_lbs</element>
+        <help/>
+        <hint/>
+        <label>Total CO2e Waste</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_b02079a5acc703107f44648dc013a4f0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>c120b9a5acc703107f44648dc013a457</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>__dont_treat_as_error__</element>
+        <help/>
+        <hint/>
+        <label>Don't Treat as Error</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_b02079a5acc703107f44648dc013a4f0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:30</sys_created_on>
+        <sys_id>d520b9a5acc703107f44648dc013a45d</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>server_count</element>
+        <help/>
+        <hint/>
+        <label>Idle Server Count</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_output_b02079a5acc703107f44648dc013a4f0</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 16:21:31</sys_created_on>
+        <sys_id>d520b9a5acc703107f44648dc013a47a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 16:21:31</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_choice action="delete_multiple" query="name=var__m_sys_hub_action_output_b02079a5acc703107f44648dc013a4f0"/>
+    <sys_hub_action_type_definition action="UPDATE">
+        <sys_id>c07e2125acc703107f44648dc013a48b</sys_id>
+        <latest_snapshot>b02079a5acc703107f44648dc013a4f0</latest_snapshot>
+        <compiler_build>glide-yokohama-12-18-2024__patch1-02-21-2025_03-05-2025_2133.zip</compiler_build>
+    </sys_hub_action_type_definition>
+</record_update>
