@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c07e2125acc703107f44648dc013a48b</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>19</sys_mod_count>
         <sys_name>Calculate Server Carbon Waste</sys_name>
         <sys_overrides/>
         <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_c07e2125acc703107f44648dc013a48b</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-31 16:21:31</sys_updated_on>
+        <sys_updated_on>2026-08-31 16:45:41</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -168,10 +168,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-31 16:17:17</sys_created_on>
         <sys_id>2b2fa165acc703107f44648dc013a434</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-31 16:17:18</sys_updated_on>
+        <sys_updated_on>2026-08-31 16:45:30</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=2b2fa165acc703107f44648dc013a434"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -196,9 +196,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-31 16:17:18</sys_created_on>
         <sys_id>672fa165acc703107f44648dc013a461</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-31 16:17:18</sys_updated_on>
+        <sys_updated_on>2026-08-31 16:45:30</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
     var threshold = inputs.cpu_thresh || 5;&#13;
     var factor = parseFloat(inputs.carbon_factor) || 0.85;&#13;
@@ -206,15 +206,19 @@
     var totalWatts = 0;&#13;
     var serverCount = 0;&#13;
     &#13;
-    // Query CMDB for active servers below the CPU threshold&#13;
+    // Query CMDB for active servers with CPU &gt; 0 and &lt;= threshold&#13;
     var grServer = new GlideRecord('cmdb_ci_server');&#13;
     grServer.addQuery('install_status', 1); // In Use&#13;
-    grServer.addQuery('cpu_utilization', '&lt;=', threshold);&#13;
+    grServer.addQuery('x_snc_enterprise_0_cpu_utilization', '&gt;', 0);&#13;
+    grServer.addQuery('x_snc_enterprise_0_cpu_utilization', '&lt;=', threshold);&#13;
     grServer.query();&#13;
     &#13;
     while (grServer.next()) {&#13;
         serverCount++;&#13;
-        var serverWatts = grServer.getValue('power_wattage') ? parseFloat(grServer.getValue('power_wattage')) : 400;&#13;
+        // Stripped leading spaces from field name&#13;
+        var serverWatts = grServer.getValue('x_snc_enterprise_0_power_wattage') &#13;
+            ? parseFloat(grServer.getValue('x_snc_enterprise_0_power_wattage')) &#13;
+            : 400;&#13;
         totalWatts += serverWatts;&#13;
     }&#13;
     &#13;
@@ -1009,14 +1013,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-31 16:17:19</sys_created_on>
         <sys_id>3b2fa165acc703107f44648dc013a4a0</sys_id>
-        <sys_mod_count>9</sys_mod_count>
+        <sys_mod_count>17</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-31 16:21:28</sys_updated_on>
+        <sys_updated_on>2026-08-31 16:45:39</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1361,17 +1365,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Calculate Server Carbon Waste">c07e2125acc703107f44648dc013a48b</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"e520b9a5acc703107f44648dc013a4e9","name":"plan","plan_signature":null}}</plan>
-        <snapshot>5920b9a5acc703107f44648dc013a482</snapshot>
+        <snapshot>57a57dedacc703107f44648dc013a494</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-31 16:21:32</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>e520b9a5acc703107f44648dc013a4e9</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-31 16:21:32</sys_updated_on>
+        <sys_updated_on>2026-08-31 16:45:42</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1538,10 +1542,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-31 16:21:29</sys_created_on>
         <sys_id>4d20b9a5acc703107f44648dc013a40c</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <sys_updated_on>2026-08-31 16:45:40</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=4d20b9a5acc703107f44648dc013a40c"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1594,9 +1598,9 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-31 16:21:30</sys_created_on>
         <sys_id>c520b9a5acc703107f44648dc013a44b</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <sys_updated_on>2026-08-31 16:45:40</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
     var threshold = inputs.cpu_thresh || 5;&#13;
     var factor = parseFloat(inputs.carbon_factor) || 0.85;&#13;
@@ -1604,15 +1608,19 @@
     var totalWatts = 0;&#13;
     var serverCount = 0;&#13;
     &#13;
-    // Query CMDB for active servers below the CPU threshold&#13;
+    // Query CMDB for active servers with CPU &gt; 0 and &lt;= threshold&#13;
     var grServer = new GlideRecord('cmdb_ci_server');&#13;
     grServer.addQuery('install_status', 1); // In Use&#13;
-    grServer.addQuery('cpu_utilization', '&lt;=', threshold);&#13;
+    grServer.addQuery('x_snc_enterprise_0_cpu_utilization', '&gt;', 0);&#13;
+    grServer.addQuery('x_snc_enterprise_0_cpu_utilization', '&lt;=', threshold);&#13;
     grServer.query();&#13;
     &#13;
     while (grServer.next()) {&#13;
         serverCount++;&#13;
-        var serverWatts = grServer.getValue('power_wattage') ? parseFloat(grServer.getValue('power_wattage')) : 400;&#13;
+        // Stripped leading spaces from field name&#13;
+        var serverWatts = grServer.getValue('x_snc_enterprise_0_power_wattage') &#13;
+            ? parseFloat(grServer.getValue('x_snc_enterprise_0_power_wattage')) &#13;
+            : 400;&#13;
         totalWatts += serverWatts;&#13;
     }&#13;
     &#13;
@@ -2466,14 +2474,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-31 16:21:30</sys_created_on>
         <sys_id>c120b9a5acc703107f44648dc013a458</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-31 16:21:30</sys_updated_on>
+        <sys_updated_on>2026-08-31 16:45:41</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>

@@ -10,9 +10,9 @@
         </element>
         <element choice="1" label="Scope" max_length="40" name="scope" type="choice">
             <choice>
-                <element inactive_on_update="false" label="Scope One"/>
-                <element inactive_on_update="false" label="Scope Two"/>
-                <element inactive_on_update="false" label="Scope Three"/>
+                <element inactive_on_update="false" label="Scope One" value="Scope one"/>
+                <element inactive_on_update="false" label="Scope Two" value="Scope Two"/>
+                <element inactive_on_update="false" label="Scope Three" value="Scope Three"/>
             </choice>
         </element>
         <element label="Co2 Identified" max_length="20" name="co2_identified" type="decimal"/>

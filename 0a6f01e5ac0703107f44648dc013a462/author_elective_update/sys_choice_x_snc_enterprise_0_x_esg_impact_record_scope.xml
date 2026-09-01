@@ -29,29 +29,10 @@
             <sys_created_on>2026-08-31 14:25:25</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-08-31 14:25:25</sys_updated_on>
-            <value/>
-        </sys_choice>
-        <sys_choice action="INSERT_OR_UPDATE">
-            <dependent_value/>
-            <element>scope</element>
-            <hint/>
-            <inactive>false</inactive>
-            <label>Scope Two</label>
-            <language>en</language>
-            <name>x_snc_enterprise_0_x_esg_impact_record</name>
-            <sequence/>
-            <synonyms/>
-            <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2026-08-31 14:25:34</sys_created_on>
-            <sys_domain>global</sys_domain>
-            <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
-            <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-08-31 14:25:34</sys_updated_on>
-            <value/>
+            <sys_updated_on>2026-08-31 17:28:41</sys_updated_on>
+            <value>Scope one</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
@@ -67,10 +48,29 @@
             <sys_created_on>2026-08-31 14:25:42</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_mod_count>0</sys_mod_count>
+            <sys_mod_count>1</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2026-08-31 14:25:42</sys_updated_on>
-            <value/>
+            <sys_updated_on>2026-08-31 17:28:53</sys_updated_on>
+            <value>Scope Three</value>
+        </sys_choice>
+        <sys_choice action="INSERT_OR_UPDATE">
+            <dependent_value/>
+            <element>scope</element>
+            <hint/>
+            <inactive>false</inactive>
+            <label>Scope Two</label>
+            <language>en</language>
+            <name>x_snc_enterprise_0_x_esg_impact_record</name>
+            <sequence/>
+            <synonyms/>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2026-08-31 14:25:34</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_mod_count>1</sys_mod_count>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2026-08-31 17:28:48</sys_updated_on>
+            <value>Scope Two</value>
         </sys_choice>
     </sys_choice>
 </record_update>

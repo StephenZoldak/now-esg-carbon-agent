@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>calculate_scope_2_idle_server_waste</internal_name>
-        <label_cache>[{"name":"fdfcafd7-28aa-48cf-9d63-537d74d84955.server_count","label":"2 - Calculate Server Carbon Waste➛Idle Server Count","reference_display":"Idle Server Count","type":"integer","base_type":"integer","usedInstances":{"3904634a-9fe2-4aa3-9f2d-e77219079c6c":["idle_server_count-1"]},"attributes":{"uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"integer","uiUniqueId":"2fde21e1-cb42-411c-a437-c2cae0a535c5"}},{"name":"fdfcafd7-28aa-48cf-9d63-537d74d84955.total_co2e_lbs","label":"2 - Calculate Server Carbon Waste➛Total CO2e Waste","reference_display":"Total CO2e Waste","type":"decimal","base_type":"decimal","usedInstances":{"3904634a-9fe2-4aa3-9f2d-e77219079c6c":["total_co2e_waste_lbs-0"]},"attributes":{"uiTypeLabel":"Decimal","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"decimal","uiUniqueId":"04faab03-87be-46d6-baad-b75a9cf54058"}},{"name":"a0ac0bc2-f468-414f-a951-1aa7b471d33f.Record.factor","label":"1 - Look Up Record➛ESG Carbon Factor Record➛Factor","reference":"","reference_display":"Factor","type":"decimal","base_type":"decimal","parent_table_name":"x_snc_enterprise_0_x_esg_carbon_factor","column_name":"factor","usedInstances":{"fdfcafd7-28aa-48cf-9d63-537d74d84955":["carbon_factor"]}},{"name":"subflow.cpu_threshold","label":"Input➛CPU Threshold Percentage","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"fdfcafd7-28aa-48cf-9d63-537d74d84955":["cpu_input"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"938a90da-0209-408f-91d0-b718af5f3048"}}]</label_cache>
+        <label_cache>[{"name":"subflow.cpu_threshold","label":"Input➛CPU Threshold Percentage","reference":"","reference_display":"","type":"integer","base_type":"integer","usedInstances":{"fdfcafd7-28aa-48cf-9d63-537d74d84955":["cpu_input"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"938a90da-0209-408f-91d0-b718af5f3048"}},{"name":"a0ac0bc2-f468-414f-a951-1aa7b471d33f.Record.factor","label":"1 - Look Up Record➛ESG Carbon Factor Record➛Factor","reference":"","reference_display":"Factor","type":"decimal","base_type":"decimal","parent_table_name":"x_snc_enterprise_0_x_esg_carbon_factor","column_name":"factor","usedInstances":{"fdfcafd7-28aa-48cf-9d63-537d74d84955":["carbon_factor"]}},{"name":"fdfcafd7-28aa-48cf-9d63-537d74d84955.total_co2e_lbs","label":"2 - Calculate Server Carbon Waste➛Total CO2e Waste","type":"decimal","base_type":"decimal","usedInstances":{"3904634a-9fe2-4aa3-9f2d-e77219079c6c":["total_co2e_waste_lbs-0"],"0527cdbf-ef45-498a-ba11-ecebe5e7e1ac":["co2_identified"]},"attributes":{"uiType":"decimal","uiTypeLabel":"Decimal","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"04faab03-87be-46d6-baad-b75a9cf54058"}},{"name":"fdfcafd7-28aa-48cf-9d63-537d74d84955.server_count","label":"2 - Calculate Server Carbon Waste➛Idle Server Count","reference_display":"Idle Server Count","type":"integer","base_type":"integer","usedInstances":{"3904634a-9fe2-4aa3-9f2d-e77219079c6c":["idle_server_count-1"],"51e61637-562f-4e49-a434-a0c2c8a3f00d":["condition"]},"attributes":{"uiType":"integer","uiTypeLabel":"Integer","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2fde21e1-cb42-411c-a437-c2cae0a535c5"}}]</label_cache>
         <master_snapshot>fc517529acc703107f44648dc013a42e</master_snapshot>
         <master_snapshot_digest/>
         <name>Calculate Scope 2 Idle Server Waste</name>
@@ -28,7 +28,7 @@
         <sc_callable>false</sc_callable>
         <show_draft_actions>false</show_draft_actions>
         <show_triggered_flows>false</show_triggered_flows>
-        <status>published</status>
+        <status>draft</status>
         <substatus/>
         <sys_class_name>sys_hub_flow</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -36,7 +36,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f21ae56dac8703107f44648dc013a4f0</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Calculate Scope 2 Idle Server Waste</sys_name>
         <sys_overrides/>
         <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
@@ -44,7 +44,7 @@
         <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name>sys_hub_flow_f21ae56dac8703107f44648dc013a4f0</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-31 16:26:41</sys_updated_on>
+        <sys_updated_on>2026-08-31 17:33:03</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -129,14 +129,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-31 16:26:28</sys_created_on>
         <sys_id>8e4131e5acc703107f44648dc013a4a2</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-31 16:26:39</sys_updated_on>
+        <sys_updated_on>2026-08-31 17:33:03</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -323,13 +323,35 @@
     <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=c241f129acc703107f44648dc013a4df"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=f21ae56dac8703107f44648dc013a4f0"/>
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=f21ae56dac8703107f44648dc013a4f0"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=f21ae56dac8703107f44648dc013a4f0^sys_idNOT IN4241f129acc703107f44648dc013a4f3,ca41f129acc703107f44648dc013a4f4"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=f21ae56dac8703107f44648dc013a4f0^sys_idNOT IN1580ce21ac4b03107f44648dc013a4bb,4241f129acc703107f44648dc013a4f3,ca41f129acc703107f44648dc013a4f4"/>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
+        <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot/>
+        <display_text/>
+        <flow display_value="Calculate Scope 2 Idle Server Waste">f21ae56dac8703107f44648dc013a4f0</flow>
+        <generation_source/>
+        <order>4</order>
+        <parent_ui_id>51e61637-562f-4e49-a434-a0c2c8a3f00d</parent_ui_id>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 17:33:03</sys_created_on>
+        <sys_id>1580ce21ac4b03107f44648dc013a4bb</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 17:33:03</sys_updated_on>
+        <ui_id>0527cdbf-ef45-498a-ba11-ecebe5e7e1ac</ui_id>
+        <values>H4sIAAAAAAAA/9VUW2vbMBT+K0HPTrDj3N8GW8Ye1kJb+tK1QpaOHYEseZKcy0L++458SbvSQBmDsjxF5/JddHT8cCRSkBWZJRBPl8mMp0majuN4vJgk2SzNkrFIGcCERESzErDSs0wBbQ4R2TJVh+CeOs0paA+2stIBjemegiuoLCvGPbXAjRXYIKSrFDvcd31fbr8OvjUlg5u+hG+kEhY0WT08RqRiFqkQl6yOr1L+UAFVLAOFSHdB1uCqlfVeS380X7AYWF7HUGgQFEcE9h60AOTLmXIQkZJpwbyxB7LytsaABSautTqcKzZSewQkoXbv5C9EX8ShLge0xqHNnY+0u7I2zDdGcriuvDS6jTTCuqRRdamvWhPhsiFntfL9ZWOkxtEIqILkIKJTlN9uzO6mJ1xL3bjrkspwps4n5r2VWe3BhXmAghKBaMmqSuqCVtZsZdOMWspRofAwypXZIamThR7hoFH4CG+IjdYY/9yE75mVwcV3hMHmU+Oe/qwDb+ujU0xb01jguJWV/4RwW+jEnaL+LQuIlxcHn2TPg26er3vxjh03Ffyo4zgVt+Hv4G5nnrgZUxnoZS5BtNnjMRc5Z7mYD8cLxoaTBc+HSzFLh9N0LuYTsZgsp9ORN54pigD4UDN3Oj05z3ztWoy1YkUBb2zFB6n4y8WDErV7GLTqo3fPoAdYS1DCvTGUfvM6ArrtCLrtS/7V9iWzuPl9zA62Ov+zFXzxNbywjI+/AedO+odaBgAA</values>
+    </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="Calculate Scope 2 Idle Server Waste">f21ae56dac8703107f44648dc013a4f0</flow>
         <generation_source/>
@@ -339,10 +361,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-31 16:26:29</sys_created_on>
         <sys_id>4241f129acc703107f44648dc013a4f3</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-31 16:26:39</sys_updated_on>
+        <sys_updated_on>2026-08-31 17:33:03</sys_updated_on>
         <ui_id>a0ac0bc2-f468-414f-a951-1aa7b471d33f</ui_id>
         <values>H4sIAAAAAAAA/9VY23LiOBD9FZWfgbW5GfI2lSw7U7U7qZpkZx+yGZVsyaBaIXkkmdwq/74t2wICBAgwNZlHSX053X26LfnmKeA0OAvoMBxmw2FvEIdhpxOG/X4nJVGSdPppEiakGzQCSaYMJC1JBIPljIjCre+xkSlm0jKda24YDvE9ZmaMU6ITJXFGUqs0KFBuckEevtZ6v1/9gc5LETTyIumEC6qZDM5ubhtBTjS4BLvB2dPKkX3IGRYkYQIsXTtE6LOD19g7mhfK69E5B36JZWVaaeqwhI2A3VsmKQNXGRGGNYIpkZRADA/zHc0IvZRisTHh0oLFwAnfG/4I5gehk8sYhJWy6my+xHW6qu10onjKLnPLlax2KqDVoRLFVH6uAnCJZhkphPWJhp0CykJZ7jA7EDWi7Gqi7r54hyMuy/DqQ6FSIuYrYq3mSWGZcbVggk3BEJ6SPOdyjHOtZrxUBizT1ljAopUJdQdODR/LFtQXgLcgRaQ1gv2Lcvsr0dxF8ReYYa78GRdQbVwl3ahCl1mZ4VQUpjzQRJrKVvBc5gp/LxzKKuo6PlylCARMqnluP4DCjNWhPDc84XtbKTJcUCJVknLn0yyxPiWWjaHe/xagTj8STe+IZt9Mkbw8uWJ6xjRqoo98PEH/QB7NeiscZ+ywpjlfjmrfjGxU3pSmun1e7NXtE52sfbph+JMayOri/fXPro6oAt7RFhHdSgK6qLdR2uIqc0t9sU7ugxk64kzQF2N9D3Be+dKRDSUPr+GtCZo5Hyvzvf3Lz/d3SU8ARHGVby4Fl+XnFYCehre9rdRIohUelOVfsLbcIyZdZy9BVqHHw6dsWVfP3z1AesUrQISuK5QbgPv56s3X1O2cjLqd9tuoC8S5eZqjn2dtQ4L9LcqVzss/OnmyKg/sWlKInm/n1D8/zGf0Vp9t53OlNztvas5lZlUnF68Q7MR3tFearfEju3sCqrU/XDUrvuN0zOzCu5eiyt4R8d+m85pd8x4qwzv6vhdtfRIkS/c9nuEp1InncAnVLAUqGAzXMZypQlJcXz8XtHF1y7g2thZenyFfmC20RApaDtkJQ6U0mkufYrLsEZ1X/JQhH16NwSAID5XhoXl4b0vGK/Ooe8K73jHzaES4KFMPz4h8qXZM6/LduWkm7ajalvLvObD2BBWdFNTxE20T3zdOth1Yf4k36bFTJ2Uk6bZJP+5EURhGIY3DQRxHg36S9UnczRaNhsvfKFSB5QyIAeaxJ4Kvarg+WqrZePCPE5i5v41qE/vi9coXSrpXaTu2yAGGOiMPeHdI9bxIlBKMyAU9ez9tYLyXfysFv17NTbX156ai/aiPecH/lvx7wT45UgxY2B5ENG0O4ihudjPabw4p6TXJMOnFHcrSbnb49/n2f3IgDoSCFAAA</values>
     </sys_hub_action_instance_v2>
@@ -351,7 +373,7 @@
         <action_type_parent display_value="Calculate Server Carbon Waste">c07e2125acc703107f44648dc013a48b</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>b02079a5acc703107f44648dc013a4f0</compiled_snapshot>
         <display_text/>
         <flow display_value="Calculate Scope 2 Idle Server Waste">f21ae56dac8703107f44648dc013a4f0</flow>
         <generation_source/>
@@ -361,15 +383,15 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-31 16:26:29</sys_created_on>
         <sys_id>ca41f129acc703107f44648dc013a4f4</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-31 16:26:39</sys_updated_on>
+        <sys_updated_on>2026-08-31 17:33:03</sys_updated_on>
         <ui_id>fdfcafd7-28aa-48cf-9d63-537d74d84955</ui_id>
         <values>H4sIAAAAAAAA/9VTy27bMBD8lUBnSRAtWpJ9CxoECNA2RdrkEgTCilraBChKoag8avjfu7Rk59EHgiIo0IMOHK52Z4Y715tA1cEySItZki9gDkLkScqSXHKe8aIWCUuByzQIAwMNUqXohlKZbnAE3YEePLbZ9EMldXsf+1u3ttivW11vt1RTq77T8Hg1lRIi1krXFk2wvL4Jgw4sNXZog+Xm1ZV77LDUUKGmH8+MwxVVhW8mvP/zw5fLo7OJ8S9E+CkEqUP/1taeDQsDfHBoaqR5EnSPYdCAqcG19vGAWIT63OgnYE2NRp0NPPTqO/Xmia+TSMLE5MHhWE7+7K1plcDzzqnWjIiDSu99a/XQmM+jAu8sShi0e+bs0FM/7DxnT2JiJL+u2/uL/cBTZXbypkvdCtCHEzhnVTU47P1rDOrba29G6ONPb4IaG5pZNtB1yqzKzrZ3ajeHaDfxStMh9htC/Hq1MjEIrzEmNyE+JfxkB1+BVV7wJ2ozzbs06nbAM//m84oBwwyjajZnEc8yEVVczqKcZTVPFjIRizzY7swtbwcva7RpMqQcPaWCXljVuWOicIeT9m04JSHnf1ys4tkSga1aU0qS0toXaYAERFKJWSR5VkSccRnBgigzgLziOavTVMYXKGjT4vH3d43KCQrVkPzwzYoOUdlJOjrdS/qN0iky9WHOFJnZu0WGzf/zyDx58zIyT2/zTyIji5SlVQURfbSJGbCoKDhEvMhnMs14nhd/H5mbH6ZZsIA+BgAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=f21ae56dac8703107f44648dc013a4f0"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f21ae56dac8703107f44648dc013a4f0^sys_idNOT IN0241f129acc703107f44648dc013a4f6"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=f21ae56dac8703107f44648dc013a4f0^sys_idNOT IN0241f129acc703107f44648dc013a4f6,1d80ce21ac4b03107f44648dc013a4b9"/>
     <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
         <block display_value="">8241f129acc703107f44648dc013a4f5</block>
@@ -381,19 +403,45 @@
         <flow_variables_assigned/>
         <generation_source/>
         <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
-        <order>3</order>
+        <order>5</order>
         <outputs_assigned>total_co2e_waste_lbs,idle_server_count</outputs_assigned>
         <parent_ui_id/>
         <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-31 16:26:29</sys_created_on>
         <sys_id>0241f129acc703107f44648dc013a4f6</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-08-31 16:26:39</sys_updated_on>
+        <sys_updated_on>2026-08-31 17:33:03</sys_updated_on>
         <ui_id>3904634a-9fe2-4aa3-9f2d-e77219079c6c</ui_id>
         <values>H4sIAAAAAAAA/9VV22rbQBD9FaOnFixj3SwpbyEhEGgbaNz0oRQx2p11lq60irSy4xr/e2et9aUppGkJhT7uzM7MOWfPSBtP96bpTTfX510nF7V39mXjSe6deVOMAxGEOTCWTqNgmoo4nsUZZ9MggpiDN/ZqqJBuGm1AFUyHWKygM1iosqPsElRv05uN4IKB4KkfZgB+nDHh53wW+UmU8jTmWZwnyeSkC9Vvt9SBy65RsL5zjSjC7qXiLVqYX8deAy0hMNh6Z5snKbNuqA+UqKjwEpmsQFH9S5ntK+cW1OjiJsTRZ0tt9Iawvf0tdTudsvwwV7fcogzGHj4arDkSDgGqw7FXQc3B6HZ9iLQI/KZWx8C9rM3Av4LHTn6n3kFi7wkkwsxpczgWTre9ZFoyvGmM1PUQMVCqvZ5a9VX9YSBjFUcBvTInivcd9cPGYrYgHCJxe69XH/cDr2S9o+eSSjMivT+BMa0se4OdfaVezp9qM4Te/fJWqLCimUUFTSPrRdG0eil3cwh2NVkoOkyE0ivCZ607AWY5TkhNmFxR/HIXvoNWWsLvqQ0V23mfavnQ47X1QlwGWcCS3A+sP+MkinzgQeLnSYazNI9EjrG33YlbPPSW1iCTE6QYNKULHWtlY84JwhId9+3YrRILnzWcOPpJcoVFh+0SW3JVT4r/8R6dVr/qFl3XBhc7BV9K6lBJrEa3O1yjC8fqGcJue+Rhntue8NW2J57+59tz1Obn7Tm+0T/ZnpSXSZjniT9DZGRI8mLGw8xnKUQwI0MEovzr7SH/ydr+mwYvLh0Sd7Tfj44Az23s+uQeX5O1JDsNrXT7zVI9xrY/APCxzFT5BgAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">dd80ce21ac4b03107f44648dc013a4b8</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Calculate Scope 2 Idle Server Waste">f21ae56dac8703107f44648dc013a4f0</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="If">af4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>3</order>
+        <outputs_assigned/>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-08-31 17:33:03</sys_created_on>
+        <sys_id>1d80ce21ac4b03107f44648dc013a4b9</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-08-31 17:33:03</sys_updated_on>
+        <ui_id>51e61637-562f-4e49-a434-a0c2c8a3f00d</ui_id>
+        <values>H4sIAAAAAAAA/+1VTW8aMRD9K8hnQMsuy9ctaoWE1DZSE+XSRqvBHgerxt7aXhKK+O8d7y4EJURBbY+94Tdf782+ETtmq1BWwd/aK+/Vg2Gzb/ddpkzE6PeOKcFmTCYgB1M+4Fk6ytIkSSfDwXKULQepyAAhY11mYI2Uya0RKihrihrosg3oKgYWsrMQGjs36DbofGduKyMoLpQvNWzv3knjK6WFw5ZfCY66B3RstnsRCtsSCw1L1NTtJjhlHqj8UhWHwg8HGZ1PNfK2vjiPcH+YZJ2ItAZJl+FTQCOQRkvQHrtsDUZAsG57RByCuDb6GVgpE6gdi8lPXv2i3mmex0SJpJFjEzw+i3Z/DcxXVnG8LiPBBgmw1G0Nt7pamy+Njrh5lFDpcNg8IZWnflhG0pFFS0nerOzj18PAuTK1wDaoLQd9fEGgNSyrgD5+GNS4pkbFGsqSllOUzm5UXUxc1v0HTY++1PaRhkbv9YFH4n3aEfTnhH+s4TtwKqr4TG2ouKG5BK94UfuU2gVHEvb1WoqfVSTUCGylFM02KMFzp8pwRXM22LLed1uTTyGX+SDJz9tjODpjghN/73ZSSA5SjHvpBKA3nHDZm4pR1suzsRgPxWQ4zfO+r31dcLJ12O+/V0mSYfL6DP6y27+4lgvW8epazq/ojRNJ3zmR+FEvvJAkSf6fyOmJKF80Vm+11cP/+ELuo82bCb7xjUCuPBG5jdji8G8RA1sygOKn0KN1P6KEZ2z/Gx9J/Kl3BgAA</values>
         <workflow_reference/>
     </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=f21ae56dac8703107f44648dc013a4f0"/>
@@ -936,14 +984,14 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>f21ae56dac8703107f44648dc013a4f0</sys_id>
         <latest_snapshot>fc517529acc703107f44648dc013a42e</latest_snapshot>
-        <compiler_build/>
+        <compiler_build>glide-yokohama-12-18-2024__patch1-02-21-2025_03-05-2025_2133.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=f21ae56dac8703107f44648dc013a4f0"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=f21ae56dac8703107f44648dc013a4f0^sys_idNOT INcd517529acc703107f44648dc013a4a4"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@6935c7bc</plan>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"cd517529acc703107f44648dc013a4a4","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="Calculate Scope 2 Idle Server Waste">f21ae56dac8703107f44648dc013a4f0</plan_id>
-        <snapshot>fc517529acc703107f44648dc013a42e</snapshot>
+        <snapshot>b14b7169ac0b03107f44648dc013a476</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-08-31 16:26:41</sys_created_on>
         <sys_domain>global</sys_domain>
