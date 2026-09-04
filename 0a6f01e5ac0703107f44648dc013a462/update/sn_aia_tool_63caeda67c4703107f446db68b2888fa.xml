@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sn_aia_tool">
+    <sn_aia_tool action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <description>Audits Scope 3 carbon footprint for hardware assets based on procurement spend and logs the audit record</description>
+        <input_schema>[]</input_schema>
+        <name>calculate_scope3_hardware_asset_impact</name>
+        <record_type>custom</record_type>
+        <script><![CDATA[undefined]]></script>
+        <sys_class_name>sn_aia_tool</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-03 18:32:06</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_id>63caeda67c4703107f446db68b2888fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>calculate_scope3_hardware_asset_impact</sys_name>
+        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name>sn_aia_tool_63caeda67c4703107f446db68b2888fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-03 18:32:06</sys_updated_on>
+        <target_document>fc44416e7c4303107f446db68b2888ee</target_document>
+        <target_document_table>sys_hub_flow</target_document_table>
+        <type>subflow</type>
+    </sn_aia_tool>
+</record_update>
