@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="a1f495edac0703107f44648dc013a4d0" label="ESG Impact Record" max_length="40" name="x_snc_enterprise_0_x_esg_impact_record" type="collection">
+        <element label="Source Record" max_length="40" name="source_record" type="string"/>
+        <element choice="1" label="Status" max_length="40" name="status" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Flagged"/>
+                <element inactive_on_update="false" label="Resolved"/>
+                <element inactive_on_update="false" label="Remediation Drafted"/>
+            </choice>
+        </element>
+        <element choice="1" label="Scope" max_length="40" name="scope" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Scope One" value="Scope one"/>
+                <element inactive_on_update="false" label="Scope Two" value="Scope Two"/>
+                <element inactive_on_update="false" label="Scope Three" value="Scope Three"/>
+            </choice>
+        </element>
+        <element label="Co2 Identified" max_length="20" name="co2_identified" type="decimal"/>
+    </element>
+</database>

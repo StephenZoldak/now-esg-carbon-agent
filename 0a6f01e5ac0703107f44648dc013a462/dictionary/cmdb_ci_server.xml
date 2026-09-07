@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" db_object_id="ce8729c3c47132107f4461fec86d30f3" extends="cmdb_ci_computer" label="Server" max_length="40" name="cmdb_ci_server" type="collection">
+        <element default="400" label="Power Wattage" max_length="40" name="x_snc_enterprise_0_power_wattage" type="integer"/>
+        <element label="CPU Utilization" max_length="20" name="x_snc_enterprise_0_cpu_utilization" type="decimal"/>
+    </element>
+</database>
