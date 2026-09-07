@@ -4,7 +4,7 @@
         <acls/>
         <active>true</active>
         <annotation/>
-        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=6131000,viewActivatedIn=naturalLanguage</attributes>
+        <attributes>browserActivatedIn=chrome,integrationActivatedIn=standalone,labelCacheCleanUpExecuted=true,timeFromCreateToActivate=364711000,viewActivatedIn=naturalLanguage</attributes>
         <authored_on_release_version>27000</authored_on_release_version>
         <callable_by_client_api>false</callable_by_client_api>
         <category/>
@@ -15,7 +15,7 @@
         <flow_priority>MEDIUM</flow_priority>
         <generation_source/>
         <internal_name>calculate_scope_3_hardware_asset_impact</internal_name>
-        <label_cache>[{"name":"fa60658e-6176-4482-840f-cfdaee42fb60.Record.asset_tag","label":"1 - Look Up Record➛Asset Record➛Asset tag","reference":"","reference_display":"Asset tag","type":"string","base_type":"string","parent_table_name":"alm_asset","column_name":"asset_tag","usedInstances":{"b3d12baf-4883-4599-a756-04aa44650e90":["source_record"]}},{"name":"fe6a0442-e23f-4ed2-8cb8-c9d92486ae54.total_co2e_lbs","label":"3 - Calculate Scope 3 PO Carbon Impact➛total_co2e_lbs","reference_display":"total_co2e_lbs","type":"decimal","base_type":"decimal","usedInstances":{"b3d12baf-4883-4599-a756-04aa44650e90":["co2_identified"]},"attributes":{"uiType":"decimal","uiTypeLabel":"Decimal","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f7533282-ebce-4a15-b80b-af103ca993ef"}},{"name":"subflow.asset_sys_id","label":"Input➛asset_sys_id","reference":"alm_asset","reference_display":"Asset","type":"reference","base_type":"reference","usedInstances":{"fa60658e-6176-4482-840f-cfdaee42fb60":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2cf47844-7137-4dad-aa1c-a29f6cbce36b","uiTypeLabel":"Reference"}},{"name":"fa60658e-6176-4482-840f-cfdaee42fb60.Record.ci.asset_tag","label":"1 - Look Up Record➛Asset Record➛Configuration Item➛Asset tag","reference":"","reference_display":"Asset tag","type":"string","base_type":"string","parent_table_name":"cmdb_ci","column_name":"asset_tag","usedInstances":{}}]</label_cache>
+        <label_cache>[{"name":"fa60658e-6176-4482-840f-cfdaee42fb60.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{"b3d12baf-4883-4599-a756-04aa44650e90":["source_record"]},"attributes":{"uiType":"object","co_type_name":"FD8e137eff750b0310ce857bcbbbe50efa","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fa60658e-6176-4482-840f-cfdaee42fb60.Record.asset_tag","label":"1 - Look Up Record➛Asset Record➛Asset tag","reference":"","reference_display":"Asset tag","type":"string","base_type":"string","parent_table_name":"alm_asset","column_name":"asset_tag","usedInstances":{"b3d12baf-4883-4599-a756-04aa44650e90":["source_record"]}},{"name":"fa60658e-6176-4482-840f-cfdaee42fb60.Record.ci.asset_tag","label":"1 - Look Up Record➛Asset Record➛Configuration Item➛Asset tag","reference":"","reference_display":"Asset tag","type":"string","base_type":"string","parent_table_name":"cmdb_ci","column_name":"asset_tag","usedInstances":{}},{"name":"fa60658e-6176-4482-840f-cfdaee42fb60.Record.cost","label":"1 - Look Up Record➛Hardware Record➛Cost","reference":"","reference_display":"Cost","type":"currency","base_type":"currency","parent_table_name":"alm_hardware","column_name":"cost","usedInstances":{"41e2aae6-1fc8-498b-858c-f4758efe8b63":["spend_amount"]}},{"name":"b78dfa9a-6ca9-47bc-9f43-eea1da96795d.Record.factor","label":"2 - Look Up Record➛ESG Carbon Factor Record➛Factor","reference":"","reference_display":"Factor","type":"decimal","base_type":"decimal","parent_table_name":"x_snc_enterprise_0_x_esg_carbon_factor","column_name":"factor","usedInstances":{"41e2aae6-1fc8-498b-858c-f4758efe8b63":["factor_rate"]}},{"name":"41e2aae6-1fc8-498b-858c-f4758efe8b63.total_co2_lbs","label":"3 - Calculate Scope 3 PO Carbon Impact Action➛Total Co2 Lbs","reference_display":"Total Co2 Lbs","type":"decimal","base_type":"decimal","usedInstances":{"af9cef60-1b68-4371-93b5-b0b9fa7bfd3e":["total_co2e_impact_lbs-0"],"b3d12baf-4883-4599-a756-04aa44650e90":["co2_identified"]},"attributes":{"uiType":"decimal","uiTypeLabel":"Decimal","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"98f86d7e-f689-4e7a-b725-ca8c5934d0d6"}},{"name":"subflow.asset_sys_id","label":"Input➛asset_sys_id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fa60658e-6176-4482-840f-cfdaee42fb60":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2cf47844-7137-4dad-aa1c-a29f6cbce36b","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master_snapshot>61ab1dae7cc303107f446db68b288826</master_snapshot>
         <master_snapshot_digest/>
         <name>Calculate Scope 3 Hardware Asset Impact</name>
@@ -36,15 +36,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>fc44416e7c4303107f446db68b2888ee</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>Calculate Scope 3 Hardware Asset Impact</sys_name>
         <sys_overrides/>
-        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_package display_value="Enterprise Carbon AI Agent " source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name>sys_hub_flow_fc44416e7c4303107f446db68b2888ee</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:25:55</sys_updated_on>
+        <sys_updated_on>2026-09-07 21:02:14</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow>
@@ -65,12 +65,12 @@
         <sys_updated_on>2026-09-03 15:43:42</sys_updated_on>
     </sys_flow_cat_variable_model>
     <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=f044416e7c4303107f446db68b2888f1"/>
-    <sys_hub_flow_input action="delete_multiple" query="model=fc44416e7c4303107f446db68b2888ee^sys_idNOT INf8295daa7cc303107f446db68b288846"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=fc44416e7c4303107f446db68b2888ee^sys_idNOT INbb5d2ab7900b03107f440be6e09f1f99"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=2cf47844-7137-4dad-aa1c-a29f6cbce36b</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2cf47844-7137-4dad-aa1c-a29f6cbce36b</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -80,7 +80,7 @@
 })(current);]]></calculation>
         <choice/>
         <choice_field/>
-        <choice_table>alm_asset</choice_table>
+        <choice_table/>
         <column_label/>
         <comments/>
         <create_roles/>
@@ -102,10 +102,10 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>asset_sys_id</label>
         <mandatory>false</mandatory>
-        <max_length>32</max_length>
+        <max_length>8000</max_length>
         <model display_value="Calculate Scope 3 Hardware Asset Impact">fc44416e7c4303107f446db68b2888ee</model>
         <model_id>fc44416e7c4303107f446db68b2888ee</model_id>
         <model_table>sys_hub_flow</model_table>
@@ -115,7 +115,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="alm_asset">alm_asset</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -127,16 +127,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-09-03 17:14:55</sys_created_on>
-        <sys_id>f8295daa7cc303107f446db68b288846</sys_id>
+        <sys_created_on>2026-09-07 20:35:21</sys_created_on>
+        <sys_id>bb5d2ab7900b03107f440be6e09f1f99</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:14:55</sys_updated_on>
+        <sys_updated_on>2026-09-07 20:35:21</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -149,13 +149,13 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=f8295daa7cc303107f446db68b288846"/>
-    <sys_hub_flow_output action="delete_multiple" query="model=fc44416e7c4303107f446db68b2888ee^sys_idNOT IN49299daa7cc303107f446db68b2888c8"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=bb5d2ab7900b03107f440be6e09f1f99"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=fc44416e7c4303107f446db68b2888ee^sys_idNOT IN353b26f3900b03107f440be6e09f1fcd"/>
     <sys_hub_flow_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=decimal,uiTypeLabel=Decimal,uiUniqueId=b6b7c54f-6923-49de-ba49-e682409dbaae</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b6b7c54f-6923-49de-ba49-e682409dbaae</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -188,10 +188,10 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Decimal">decimal</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>total_co2e_impact_lbs</label>
         <mandatory>false</mandatory>
-        <max_length>15</max_length>
+        <max_length>8000</max_length>
         <model display_value="Calculate Scope 3 Hardware Asset Impact">fc44416e7c4303107f446db68b2888ee</model>
         <model_id>fc44416e7c4303107f446db68b2888ee</model_id>
         <model_table>sys_hub_flow</model_table>
@@ -213,16 +213,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-09-03 17:14:56</sys_created_on>
-        <sys_id>49299daa7cc303107f446db68b2888c8</sys_id>
+        <sys_created_on>2026-09-07 20:25:55</sys_created_on>
+        <sys_id>353b26f3900b03107f440be6e09f1fcd</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:14:56</sys_updated_on>
+        <sys_updated_on>2026-09-07 20:25:55</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -235,38 +235,16 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=49299daa7cc303107f446db68b2888c8"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=353b26f3900b03107f440be6e09f1fcd"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=fc44416e7c4303107f446db68b2888ee"/>
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=fc44416e7c4303107f446db68b2888ee"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=fc44416e7c4303107f446db68b2888ee^sys_idNOT IN0d299daa7cc303107f446db68b2888d2,28abd9ae7cc303107f446db68b2888a6,49299daa7cc303107f446db68b2888d0,8d299daa7cc303107f446db68b2888d1"/>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Calculate Scope 3 PO Carbon Impact">a5127eb9400303107f44ba0a715fe97b</action_type>
-        <action_type_parent display_value="Calculate Scope 3 PO Carbon Impact">9de07a75400303107f44ba0a715fe94b</action_type_parent>
-        <attributes/>
-        <comment/>
-        <compiled_snapshot/>
-        <display_text/>
-        <flow display_value="Calculate Scope 3 Hardware Asset Impact">fc44416e7c4303107f446db68b2888ee</flow>
-        <generation_source/>
-        <order>3</order>
-        <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
-        <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-09-03 17:14:56</sys_created_on>
-        <sys_id>0d299daa7cc303107f446db68b2888d2</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
-        <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:25:49</sys_updated_on>
-        <ui_id>fe6a0442-e23f-4ed2-8cb8-c9d92486ae54</ui_id>
-        <values>H4sIAAAAAAAA/+1UTW/TQBD9KyufoCSuXTt1nJ4qlQokoBKFXprKWtuzycJ6192PtKHKf2fWsdOqhYI4IA6cbD/Px3tvZ/byLuB1MAsO4/gggzJPoyiJkjjKWJqWNKJZPGGQT8tgFEjaAEa2qjAtyBqRFRXOQ/hac9MKur64R6olF7UGGcwur0ZBSzWmW9DB7O7RL7tuoRC0BIGJJ1DxhgrM/11aQ+YDXk+Z+h6I1LvqSteeSzwK4NZiDGA3RoWBUdBQWVOr9HqHaKD1mRT3wJJLu1XZ0FvDv2HteOLjGKCsqndg91n07gzGKF7BWWu5klvE0lIMrinhGvlhK8D7Cow6YR/46gzWA68LPImeETtfqpuPQ8NTLjt5/U+hKhQ9fFFrNS+dBePPwvFPj73ZQu+enAgIaLBn0dC25XJRtFqteNcHaTfhQuBHyIS6QX6GL2RIK68xRDdpeIr4SQdfUM294PdYBpN9v8+SXzt46088onmSlkk2jjMG4zTOkzGtq+mY0nIap1EySek02HTmFtfOy9ra1BtSbD3FAFNp3tpjpLBCeVY7GDAvezcb+P5cZLC/N5d7e8dVBcYQL2L/uFNFvCriDBpB7BIIq4sOUeUXqGxIzrsCpHHGEg3WaUko6RYmJL7imR9AIl1T4oMbohgzYEm5Jq9iwiV5rbXS5A3OovAtzmHrZUdmRbnwDhLVDZEh/XwR1yKxViNVnzMPwnlAKMOtG+j5dLilTStghmw0MUulLZ5LReYOd6weAkOckcUCdFg5jSNlwy7QH2ynC7se+Vq9sl0VD+7PZQ/j0htAz6h9MZQt4qIQSn0tXFtoqHANw/5RKWNfHgWbzWY03EmTZ5ef3W96d5QFw3lT+u/cS7+mNmQ+4vZjxj+7nw7+30//2P1UZpOkZof5OGcsGadZnI3zLD0clzHLoySleZ7TP7ifOu2bq++LxdhYjwcAAA==</values>
-    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=fc44416e7c4303107f446db68b2888ee^sys_idNOT IN28abd9ae7cc303107f446db68b2888a6,49299daa7cc303107f446db68b2888d0,8d299daa7cc303107f446db68b2888d1,f70ae673900b03107f440be6e09f1f47"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
         <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>2de05916c31332002841b63b12d3aee1</compiled_snapshot>
         <display_text/>
         <flow display_value="Calculate Scope 3 Hardware Asset Impact">fc44416e7c4303107f446db68b2888ee</flow>
         <generation_source/>
@@ -276,19 +254,19 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-03 17:25:49</sys_created_on>
         <sys_id>28abd9ae7cc303107f446db68b2888a6</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:25:49</sys_updated_on>
+        <sys_updated_on>2026-09-07 21:02:31</sys_updated_on>
         <ui_id>b3d12baf-4883-4599-a756-04aa44650e90</ui_id>
-        <values>H4sIAAAAAAAA/91UTW/bMAz9K4HPtiF/xHNyG7Bl2GEt0BS9dK0gS7QjQP6YJKfJgvz3UbaTdUUDFMOAYfPJIqnH90iK9wdPCm/pZRGQ+SLKeBIlSUxInKdRkSVFFIuEAaSe7zWsBoy0rFBAh4PvbZnqnXFHTcMpNBZ0p6UBSuiOgqmorDvGLdXAWy3wgpCmU2x/N937uP40+zyEzG5OIXwjldDQeMv7B9/rmMZUiOstDy9cdt8BVawAhUi3jtbsaqT1Vkm/XL4g0WV5aUOijhDxPdhZaARgvpIpA75Xs0Yw2+q9t7S6R4MGJq4btT9HbGRjEdBzsTsjvyN6TlxcCSiNw+g7H+lUstHMN63kcN1Z2TajZSA2OVvV183VKMIVG0rWK3sqNlp6bI2AzlF2JCZG5XrTPt2cEq5kM6ibnKrlTJ1PzFoti96Ccf0ABTUC0Zp1nWwq2ul2K4fLyKUOK4WHsFTtEyY1smpCbDQSD7FCLFyh/cNgvmNaOhVfEAYvHwf19Fvv8o46JsZ0FI0BhmvZ2fcIt4WJ3NE/zbIAsrjY+Kj42ehhfM2zOTa87eBrT0gi1u53drvRAI+8jal0BGQpQYz+w6GEjJE0jQOIkzJIQcRBzos84AuxiNM8YzBPQ9tapigC4KgW5nh8NG2vsavjizhDsYxk8xyCLHqXBWmaI1RKyoCXwo1qXBYZCccXEjJjwFLLKgdmme3NiLJSrKrglUf2f4j6zbUANZbCwmwshv/mCTkBrCQoYV4ZmdNemBLQ7ZRg2g3Rn9oNUUaG7+9siJHnP7Ygnu3qC6vi4Qct3NVG+AYAAA==</values>
+        <values>H4sIAAAAAAAA/9VUXW/aMBT9K8jPASVAWcrb1K7TpK2VytSXrrVu7Buw5DiZ7bQwxH/fdRwo6lptk/aw8oTv5znHPrndMiXZnM0yTE9Os5mYZJPJOE3H+TQrZpMiG8sJIE5ZwgxUSJUeCo28OyTsAXQbgmvujOBoPNrGKoc85WuObslV1YDw3KKoraQGqVyjYXPT931YfBx86koG1/sSsVJaWjRsfnuXsAYsraK5bL59lvpT4BoK1FT6NSB/hYjfNC/GPh/3Di5jgnAGPGnCcO3RSCQgJWiHCavASPC13bC5ty0FLIK8MnpzqFgp42kgC7Vrp37Q2jwNdSUSM4ExdzjyXrEYLs/Bw4ImC9/avlSsaiXQRU0kltBqf3YciwVXjVe1iS0dzb671m1lLqMk7DBgf0EUaek6JTaBZ0De0ygXq/rxeo/yQplOkj6pawH6cALvrSpaH/BsGWqsaBCvoGmUWfLG1g+qayYs1Wip6TAqdf1IS51amhE9DgI+IllhdEHx8y58A1YFFl9oDDXvEuY27kyDc09cSET+vQ1IIrOeA48yhBZhVePf04IH7OHukr0jJKanrz6srHh6SJ0J3JEbnKgb/Nam6UQuwt/B15VFvBf1mKsAQJUKZcxvt9MMxwA4G2alyIfT07wY5ie5GJbTdyc56ZvT0pGvPWgeBujC7Xb3rm4tvY1oqzgJdMVXYOUjWPzVaP8DpL809u/13xv7QqGW7oUL2bsaK9LCI48X9MzZfXJw0yd7d2f/yt3ZLO1+b8jjkdybt/jR1/wVs9/9BDQ+zP0ABwAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="Calculate Scope 3 Hardware Asset Impact">fc44416e7c4303107f446db68b2888ee</flow>
         <generation_source/>
@@ -298,19 +276,19 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-03 17:14:56</sys_created_on>
         <sys_id>49299daa7cc303107f446db68b2888d0</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:25:49</sys_updated_on>
+        <sys_updated_on>2026-09-07 21:02:31</sys_updated_on>
         <ui_id>fa60658e-6176-4482-840f-cfdaee42fb60</ui_id>
-        <values>H4sIAAAAAAAA/9VY227bOBD9FUHPjleybMvOW9DAQIHdBmjTvqQBQYlUTCxNqiSV1DH87x2Kkuz4qjgumj5yOJczM2fGlO8WPiP+pU/GwTgbjwejOAiiKAiGwyjFYZJEwzQJEtz3O77AMwqaBiecwvER88KeMZ8hrDU1ICNM5xzPv1VXV5U4nTJOFBX+5d19x8+xAk+GKv9ysXFl5jlFHCeUg/WtDeR9slE7rUG+MN4GbQPURySca6mIxRJ0fPrTUEEohMow17Tjz7Ag2Eg1bySKYnIj+EowZcKAR98q/9TsGdyPAquXUUgrpe6uOaKqRE6cTiVL6U1umBRO4oC6S8mLmfjkErDFpRkuuKmLC5JCgz+aW8wWRIUo+zKVT5/rgBMmyvSqSy5TzJsTNkaxpDBU215QTmfgCM1wnjPxgHIlH1lpDFhm3QcOh27G5RME1exBdHFqgXehRLg7Afl1Kf6GFbNZ/AduwBgAMQ7dRq7oWhaqrMojSnmhywuFhXa+/GVZK/SjsChd1lV+yJUIFHSqWG6uwOCRVqksOzWPBwcpMl5RIpWCMBtTr5FZzzVi5HsBxmSx0EVi0+2W9Ebubrnc5nlLq9PG4MM6zrY57jTelXg1EC9k1UCEZxuIfhD8oZEwqnh/E3GM4y7hI0QPyUESkFW/tVQGucqtMX2bxSczdMIoJy8WdQtwtfGNJZuXzPfhrQia2RgbG7v312/sd0lPAESQqzcTnInyBxOAnoe3g4PUSMINHpTtX9vPVoZ1us1e7BnpPZ++Zcu+1vxtAbI2/AKIvFuHcgfwer/W7ivqRmejbtR7HXWBOHeLBn1TtR0Frt9FtnW1/rPVx5v6wK41g3B531D/w2kxw9fG7NmYG7MZvWo415nlbq73EOzMr649w9b5ndM9BdMqHnLDip4YeaBmFb3WItI8Yf7/rvuKXc0Mlem9+QUXHnzkJ2svOJahGfSJ5fCsVDQFKmiEFUWZLARB1YNyRRvbt4wpbSrl7R3ymZpCCU/CyHlmSr1S22u0z7FZWmRXG37MvDq9CoP2ID2vTM9r0ntdMfbso/4Z33pv2UcTzHhZevgwyNd6R5WSas9OOtK1A+1vubBaggrPCurtG20X33dutiNY/4qvzLdunZTipN/DwzgKwyAIAxIHozgOR8MkG+K4n60GDSEtUliL4DkDYoB7VBOh7mq4vVqqrXniPyFg/M+k3K6d1nBr42sp7JdpLzaexQtt9mq8xzOq1kUiJadYrNg5+GP74r38WVKw283aONG/u5r2u37LC/ZVsB8F/WhJMaJBbxSS9GIUh/FFPyPDizHBgws8TgZxRGjaz07/eb7/BQKIF4kqFAAA</values>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjiv5S3ZuiwTGFmgboEl76RYEJVIxUZpUSSquY/i/71CUZMFWbAvrAAn2yOGQfDPz3pDSj43PiH/tk1kwS2ez8TQKguEwCCaTYYLDOB5OkjiI8cjv+QIvKXgaHHMKwyfMczvGfIkWWJEVVtZMmM44Xn8vZ//ezSQLxomiwr/+8bPnZ1jBfoYq/3qzN3UuII5jysH1oUS0B9Css3qIijln+9Rc5n1xE1IRCyXo+fSPoYJQwJBirmnPX2JBsJFqXVsUxeRO8J1hwYSBHX3r/EezZzh3Gli/lEJUCXVz9RCVSXLm9BYbfG9Unphcla7JQrKEapcPQlOcc3PTtDmHu8wwKdwSF7ZbLXm+FF9cOvx6g6omYMk1gKCZDdQiL8NI7xdy9bVCOWeiyEk5yWWCeT3CxigW58bi2fiU0yVshJY4y5h4RJmST6xYDFiW/UcOg37K5QoO1exR9HFigfchr7g/B/ttYf6OFbNRfIZtYDEAYhwYglwJtcxVkconlPBcFxMKC+328rc9X6/1Dcda7yKHlKPfucXt8lBGjFzS7JJEscz8BVs80TK4ba/SxPgoBWc7yiVSEGZR6IYwAA1i5J8cFpPNRuexTUAf4FGD3Nx2eyiYM1d1FNPpSCox3TRDaQuvlNWB7VPbBqWswovJahQE70lYcPjb01V3pbgUnJBLSI6SjOz4pKUyyOWyoZdDLXTm+RkQKp7fWWZ68folVCXNU0Y5abs95nZi7/YY/D9vjzdJcgBEkKseE5yJ4ikAQF+L/eOj1IvDPZ4V9GrcFdaGdXKoAewZ6T13VsIZcCol3MPZ3oPD0wKx6vcFZfZ7fWUsBTC8mACGg8sIYFOHWSeyJefV689Ws/J/tv543x8o2FgQbtsE1unMsOuZg+2hgIedFNwkm5u5fYFzF34mvqDI3mu2gAUsLc9DTr9oxcgjNbvTKy8izQrzX23zJeNQVagivFd4coZHv3rixpOTpWgJlWMZvIwVTYAcGsF3FkplLggq38Q7ItlKpkxpUzofNpqvFPQjPAnC9MyCeoW3V3t3vIhPx1Gl8mPqVYGUp2kPAvGKQLw6kG5hd2laows+Ti/dtOaY8aIa8LmTNcpJlZLqhcZ1opBHGHFmVzsTVHhRUP+97bVJoLX9ncD6Lr6dL9+aEorj0QBPomEYBkEYkCiYRlE4ncTpBEejdKdRhLRIoJvCzilQBbZHFTWqOoeH/adstt36zBmgKgbeSmG/qgeR8SwqKK9XoTqNu+wnsZScYrHXUB4A+Yd5cSPUdB2/uabyLn4k5exhP9PO1Jrr13o25OybYL9z+tFSbEqDwTQkydU0CqOrUUomVzOCx1d4Fo+jIaHJKL3kS+Dnv75qQwySFQAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
         <action_type_parent display_value="Look Up Record">b93f42810b30030085c083eb37673a63</action_type_parent>
         <attributes/>
         <comment/>
-        <compiled_snapshot/>
+        <compiled_snapshot>9d09f99587003300663ca1bb36cb0ba3</compiled_snapshot>
         <display_text/>
         <flow display_value="Calculate Scope 3 Hardware Asset Impact">fc44416e7c4303107f446db68b2888ee</flow>
         <generation_source/>
@@ -320,15 +298,63 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-03 17:14:56</sys_created_on>
         <sys_id>8d299daa7cc303107f446db68b2888d1</sys_id>
-        <sys_mod_count>2</sys_mod_count>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_mod_count>19</sys_mod_count>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:25:49</sys_updated_on>
+        <sys_updated_on>2026-09-07 21:02:31</sys_updated_on>
         <ui_id>b78dfa9a-6ca9-47bc-9f43-eea1da96795d</ui_id>
-        <values>H4sIAAAAAAAA/9VYW3PaOhD+Kx4/E2pzM+Stk5SezrRNp8npS06ORpZk0BwhuZIccpn897OybCBAgACdpo+S9vLt7rdrydePIafhaUgH0SAbDLr9JIra7Sjq9doEx2na7pE0SnEnbIQSTxhIWpwKBstbLAq3vkNGEsSkZTrX3DAUoTvEzAgRrFMlUYaJVRoUKDe5wPc/Kr0Plx+Ds1IkGNYiZMwF1UyGp9c3jTDHGlyC3fD0cenI3ucMCZwyAZauHKLgq4PX2DmaZ8qr0TkH9RJJb1pp6rBEjZDdWSYpA1cZFoY1wgmWFEMM97MdzTC9kGK+MebSgsXQCd8Z/gDm+5GTyxiERZg/my1RlS6/TcaKE3aRW66k3/FA/aESxUR+9QG4RLMMF8LWiYadAspCWe4wOxAVouxyrKbfa4dDLsvwqkOhCBazFbZW87SwzLhaMMEmYAhNcJ5zOUK5Vre8VAYsk+ZIwKKZCTUFp4aPZBPqC8CbkCLcHML+ebn9A2vuovgCZpgrf8YFVBv5pBtV6DIrt4iIwpQHGkvjbYVPZa7Qz8Kh9FFX8SGfIhAwRPPcvgeFW1aF8tSoCd/dSJHBnBJEScqdT7PAeoItG0G9/ylAnf6FNZ1izf41Rfr85L0xzAbftCKFLpMWXDqYq+1wuMH9mudsMbpdM7NWeV26qjZ6tle1UXy0NupE0W9qJKuLt9dH2zrDB7ylPWK6kQR0Xm+jtEU+cwv9sUrwvRk65EzQZ+N9B3C18oUjW5Dev4S3ImjmfCzN+dYfP+ffJD0BEEU+31wKLsvPLAA9Dm+7G6mRxks8KMs/Z225hw1ZZS8OrAoe9p+yZV1r/u4Asla8BETBlUe5Bng9X2vzFXXbR6Nuu/U66gJxrh9n6GdZW5Pg+jblSlfLPzh5vCwP7FpQiJ9uZtQ/289n/FqfLedzqTfbr2rORWb5k/MXCHbku9oLzdb4ld09BtXKH/LNiqacjpide6+lqLJTLP5bd16xa9ZDZXgH3/vijU+DdOHexzM0gTrxHC6jmhGggkFwJUOZKiRF1TV0ThtXt4xrYyvh1RnyndlCy0BBywV2zIJSOphJH2Oy7BBdrfgpC+rwKgwmgPCCMrxgFt7rkvHCPOoc8a53yDwaYi7K1MNzIl+oHdO6fH+um0lbqrah/DsOrB1BxUcFdfhEW8f3tZNtC9Y/4m166NQhDKedFu4l7TiOojiiSdRPkrjfS7MeTjrZvNFQ+TuFKrCcATHAPKqJUFc1Wh0tfjbu/QMFZu67YWViV7y18rmS7mXaSmzgAEOdgxrw9pCqeZEqJRiWc3p2f9vAeCv/WAp+tZwbv/V5XdF+1ce84H9L/rNgnxwp+ixq9WNKTvpJnJx0Mto7GVDcPcGDtJu0KSOdbP/v883/IuD384oUAAA=</values>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3MrkvVugW6zqLO9dFuCIimbWJpUSSqOE+S/dyhKtmsrtoU6QII9cjgk38y8NyL15THkNLwM6Tgap+NxfzSMom43igaDLsFxknQHJIkS3AtbocQLBp4WJ4LB8A6L3I3vkZEEMWmZzjQ3DEXoHjEzQwTrREmUYmKVhgWUm0zg1edy3e/TP4KrwiWYVC5kzgXVTIaXX762wgxrOBL2DS8fd6ZOxSxwwgS43pagd2Kwq2w9RMWct33YXhZ89BNKUwclaoXs3jJJGWBIsTCsFS6wpBhCWK0tmmF6I8XGMOfSwo6hc743/AHOHUXOL2UQFWF+bj1EZba8Ob3GFk+tzonNdelK5ooTZnw+KEtxLuzVts073GSWK+mX+LD9aiXyhfzo0xGuN6iKA5YcSklZ5gJ1yMsw0ulcLT9VKCdcFjkpJ4UiWKxH2FrNk9w6PI8hE2wBG6EFzjIuZyjT6o4XiwHLoj0TMGinQi3hUMNnsg2cAOBtyCtuT8B+XZg/Y81dFH/BNsxRJuUCGIJ8CY3KdZHKO0REbooJjaXxe4VPrdCszJXAxmwih5Sj77nD7fNQRox80twSonlm38EWd6wM7qlVyaZ/kILjDeWIkpQ7FGZLOwRbNgPa/JvDcvon1nSJNftm8uTnmXfGMBv8rRWB8rs0BlMHc19Uv75hQwkej7+S4NV2AuqSUopxz/ahboNSjPHZxNiLorckRzj89amxub58Co6ILKYHSUY3fDJKW+RzuaWyfZk05vkJECqe3zhmBsnqOVQlzVPOBK375kzcxM43p/P//Oa8SpIDIIp89bgUXBYXCAD6UuzvH6ReEu/wrKDXhvuFDRuyrwEcWBU8NFbCCXAqJUzh7ODW46mBWPX7gjK7vb4ylgLonk0A3c55BPC4DnOdyJqcV3dGV83K/8H5411/oODWgvipTmCNzoybntl52hdwt5GCt8nmZ66f4dyZL5fPKLL1ki1gDkvL85DXL1pyOmN2c3rlRZVdYvFf3XzJOFQVqgjvBS6q8cG3UrJ1UeUpWkDleAb3ac0IkMMguEOiVOWSovImvSGSq2TKtbGl836j+cRAPzJQIMzAzllQeAdr74Yf4uNxVKl8nwZVIOVpJoBAgiKQYB1Is7CbNK3eGS+n525aE8xFUQ14JGVb5WRaFy/xusZ1pJAHGHFiVzsRVHxWUL/e9uokUNv+jmB9Ey/u87cmwnDS6+DBsBvHURRHdBiNhsN4NEjSAR720o1GUfGriSrYOQWqwPaookZV52i///iW2rTRnICqouC1ku5V3RnawMGC+gYVrOPAy4aSKCUYljsd5Ra+E79NSvwlX/uvrqu8if9POb/dzbQ31eb6pe4NOf9H8u85e+8oNmJRZxRTcjEaxsOLXkoHF2OK+xd4nPSHXcpILz3nVeDrDzIVjNPsFQAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Calculate Scope 3 PO Carbon Impact Action">a5462efb90c703107f440be6e09f1f5a</action_type>
+        <action_type_parent display_value="Calculate Scope 3 PO Carbon Impact Action">7b356af790c703107f440be6e09f1f36</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>a5462efb90c703107f440be6e09f1f5a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Calculate Scope 3 Hardware Asset Impact">fc44416e7c4303107f446db68b2888ee</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 20:20:52</sys_created_on>
+        <sys_id>f70ae673900b03107f440be6e09f1f47</sys_id>
+        <sys_mod_count>17</sys_mod_count>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 21:02:31</sys_updated_on>
+        <ui_id>41e2aae6-1fc8-498b-858c-f4758efe8b63</ui_id>
+        <values>H4sIAAAAAAAA/+VTXU/bMBT9K8jPdeWENB99QyCkSduQYOMFoejavqaWnA8SB+iq/vfdNEk7WKVtGtrLHn18P8459rnbMKvZkgGqNARjMqEScRqIxESRkBijyExgTMpmrIQCqbKtsdQ5FFVXekKfwHU9vNkYiEW8SJHHQRLzKEpDnkbCcGU0IEahkbGYX6OqGj1XVeu3W2rXtq0drG//bopaWacbLNny7n7GamiIqseGLTdvrn5XqwOJjkpverEnZ5PY4xb4db1DfWPLh/H8cRowgcS3JxTMGL54akdiYsC1OGMFlBp81az3SIOgr0p3AFaWNi0Z64tfWvuN9qVCiL7SIKlTONzuj/lo7ACbC/BAVDrlu2YsVavKKmwHXzQa6Jw//xEbCq5qb6tyaPEg3dRdua4oPw9+sP2A6R0J6Voigb1T2HMfhZibVfV8PbG8tOXOlfHSVQrc/gSevJOd7/lsWGe/vLF5QH4yGh0WtDEvoK4JyeumerK7LUS6mD84OsyNq56JXWsfyjmoXuGcngDml4Rf7OBbaGwv9xONoeZ+3dfSPnb4of9CYQQZJAHwNFhIHkEYcylkSL9UpKHOdJiCYtsZa9ftuYO2PRhFL5Q/dr3MwbbRoHzwuG9Rja39GZF6wtGL7WxKaRDFIRp5/OfG4eGLGlJVNXkDHl+FVCapNsSdxwoyHiVS8cxEpxwRAg1ZnGQLPcVrmHEspn8euV8TnyJ3udt6cj0wPypnDJxGZQty8nXiLvboGLnw3SIXLP7HwB1sfp24g9H/JHJpFAtIpORpmp3ySKqESy0XXMlAhFmoAsTsHSN3/x07cCjjGgcAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=fc44416e7c4303107f446db68b2888ee"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=fc44416e7c4303107f446db68b2888ee"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=fc44416e7c4303107f446db68b2888ee^sys_idNOT IN735d2ab7900b03107f440be6e09f1fba"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
+        <attributes/>
+        <block display_value="">775d2ab7900b03107f440be6e09f1fb9</block>
+        <comment/>
+        <connected_to/>
+        <decision_table/>
+        <display_text/>
+        <flow display_value="Calculate Scope 3 Hardware Asset Impact">fc44416e7c4303107f446db68b2888ee</flow>
+        <flow_variables_assigned/>
+        <generation_source/>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned>total_co2e_impact_lbs</outputs_assigned>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 20:35:21</sys_created_on>
+        <sys_id>735d2ab7900b03107f440be6e09f1fba</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 21:02:13</sys_updated_on>
+        <ui_id>af9cef60-1b68-4371-93b5-b0b9fa7bfd3e</ui_id>
+        <values>H4sIAAAAAAAA/6VTXWvbMBT9L3qOjRM7jp23wigUthXWrC9jGH1cJWKypFpy0szkv+8qdtISKBvsUed+nXPu1UBsH1wf/Mbeea+2hqx/DEQJsib5MmeLUuZ1lrEsn2crWRQZgxKyWs4lF2RGDG0BM4MNVDfcLqBRraM8NJp5DO+p7mN8GIo5LCiFMsHCKinqiiXVsuKJLFbLCiRUrMzTa5tYfjphA6G80/T4/L99+E5p0UEU93NGHO2Qd4COrIebUDg6aDRloHHcU+iU2WL5v9pxKfzIj7/YFYdj2F/G2k5EjvMZgdcARgDSkFR7mJGWGkGD7Y5XpAMqHo1+A3bKBOxGYvKrV7+xdZVlWcyUgII5jNHrs5ncHmG+s4rDowvKmhEJlOmphlvdt+brKCfuCSTtdbjsCZHeYz9wkXWkMXGSTzt7+HYZeK/MWeAU1JZTfX3RgDawPoCPW+rV5sacEfl8uyrQ0OLEpqXOIdK4zu7VeQqSbtOtxkcqtT0gu3juKdqPClN0k6b3iH86w8+0U1HuF2yDxXHcd6NeeniIp8BKtuLLQiZlvcjxCgUkjBZ1AmW1KLJaMDxRcjpb27z0UdRo0mRHMzqKCZ53yoU7pLCHSfkJr1CZ+CPHi9xPTKanAK48Et5E7OFdnjjidSn+HjrY7leU+oad/gCrLbfX7wMAAA==</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=fc44416e7c4303107f446db68b2888ee"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=fc44416e7c4303107f446db68b2888ee"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -341,16 +367,16 @@
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-09-03 17:14:55</sys_created_on>
-        <sys_id>70299daa7cc303107f446db68b288895</sys_id>
+        <sys_created_on>2026-09-07 20:35:21</sys_created_on>
+        <sys_id>b35d2ab7900b03107f440be6e09f1f9f</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_package display_value="Enterprise Carbon AI Agent " source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:14:55</sys_updated_on>
+        <sys_updated_on>2026-09-07 20:35:21</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -365,16 +391,16 @@
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-09-03 17:14:56</sys_created_on>
-        <sys_id>0d299daa7cc303107f446db68b2888cb</sys_id>
+        <sys_created_on>2026-09-07 20:25:55</sys_created_on>
+        <sys_id>793b26f3900b03107f440be6e09f1fd0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_package display_value="Enterprise Carbon AI Agent " source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:14:56</sys_updated_on>
+        <sys_updated_on>2026-09-07 20:25:55</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -393,7 +419,7 @@
         <description/>
         <flow_priority>MEDIUM</flow_priority>
         <internal_name>calculate_scope_3_hardware_asset_impact</internal_name>
-        <label_cache>[{"name":"fa60658e-6176-4482-840f-cfdaee42fb60.Record.asset_tag","label":"1 - Look Up Record➛Asset Record➛Asset tag","reference":"","reference_display":"Asset tag","type":"string","base_type":"string","parent_table_name":"alm_asset","column_name":"asset_tag","usedInstances":{"b3d12baf-4883-4599-a756-04aa44650e90":["source_record"]}},{"name":"fe6a0442-e23f-4ed2-8cb8-c9d92486ae54.total_co2e_lbs","label":"3 - Calculate Scope 3 PO Carbon Impact➛total_co2e_lbs","reference_display":"total_co2e_lbs","type":"decimal","base_type":"decimal","usedInstances":{"b3d12baf-4883-4599-a756-04aa44650e90":["co2_identified"]},"attributes":{"uiType":"decimal","uiTypeLabel":"Decimal","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"f7533282-ebce-4a15-b80b-af103ca993ef"}},{"name":"subflow.asset_sys_id","label":"Input➛asset_sys_id","reference":"alm_asset","reference_display":"Asset","type":"reference","base_type":"reference","usedInstances":{"fa60658e-6176-4482-840f-cfdaee42fb60":["conditions"]},"attributes":{"sourceUiUniqueId":"","sourceType":"","sourceId":"","uiUniqueId":"2cf47844-7137-4dad-aa1c-a29f6cbce36b","uiTypeLabel":"Reference"}},{"name":"fa60658e-6176-4482-840f-cfdaee42fb60.Record.ci.asset_tag","label":"1 - Look Up Record➛Asset Record➛Configuration Item➛Asset tag","reference":"","reference_display":"Asset tag","type":"string","base_type":"string","parent_table_name":"cmdb_ci","column_name":"asset_tag","usedInstances":{}}]</label_cache>
+        <label_cache>[{"name":"fa60658e-6176-4482-840f-cfdaee42fb60.__action_status__","label":"1 - Look Up Record➛Action Status","reference_display":"Action Status","type":"object","base_type":"object","usedInstances":{"b3d12baf-4883-4599-a756-04aa44650e90":["source_record"]},"attributes":{"uiType":"object","co_type_name":"FD8e137eff750b0310ce857bcbbbe50efa","action_error_output":"true","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper"}},{"name":"fa60658e-6176-4482-840f-cfdaee42fb60.Record.asset_tag","label":"1 - Look Up Record➛Asset Record➛Asset tag","reference":"","reference_display":"Asset tag","type":"string","base_type":"string","parent_table_name":"alm_asset","column_name":"asset_tag","usedInstances":{"b3d12baf-4883-4599-a756-04aa44650e90":["source_record"]}},{"name":"fa60658e-6176-4482-840f-cfdaee42fb60.Record.ci.asset_tag","label":"1 - Look Up Record➛Asset Record➛Configuration Item➛Asset tag","reference":"","reference_display":"Asset tag","type":"string","base_type":"string","parent_table_name":"cmdb_ci","column_name":"asset_tag","usedInstances":{}},{"name":"fa60658e-6176-4482-840f-cfdaee42fb60.Record.cost","label":"1 - Look Up Record➛Hardware Record➛Cost","reference":"","reference_display":"Cost","type":"currency","base_type":"currency","parent_table_name":"alm_hardware","column_name":"cost","usedInstances":{"41e2aae6-1fc8-498b-858c-f4758efe8b63":["spend_amount"]}},{"name":"b78dfa9a-6ca9-47bc-9f43-eea1da96795d.Record.factor","label":"2 - Look Up Record➛ESG Carbon Factor Record➛Factor","reference":"","reference_display":"Factor","type":"decimal","base_type":"decimal","parent_table_name":"x_snc_enterprise_0_x_esg_carbon_factor","column_name":"factor","usedInstances":{"41e2aae6-1fc8-498b-858c-f4758efe8b63":["factor_rate"]}},{"name":"41e2aae6-1fc8-498b-858c-f4758efe8b63.total_co2_lbs","label":"3 - Calculate Scope 3 PO Carbon Impact Action➛Total Co2 Lbs","reference_display":"Total Co2 Lbs","type":"decimal","base_type":"decimal","usedInstances":{"af9cef60-1b68-4371-93b5-b0b9fa7bfd3e":["total_co2e_impact_lbs-0"],"b3d12baf-4883-4599-a756-04aa44650e90":["co2_identified"]},"attributes":{"uiType":"decimal","uiTypeLabel":"Decimal","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"98f86d7e-f689-4e7a-b725-ca8c5934d0d6"}},{"name":"subflow.asset_sys_id","label":"Input➛asset_sys_id","reference":"","reference_display":"","type":"string","base_type":"string","column_name":"","usedInstances":{"fa60658e-6176-4482-840f-cfdaee42fb60":["conditions"]},"attributes":{"uiType":"string","uiTypeLabel":"String","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiUniqueId":"2cf47844-7137-4dad-aa1c-a29f6cbce36b","sourceUiUniqueId":"","sourceType":"","sourceId":""}}]</label_cache>
         <master>true</master>
         <name>Calculate Scope 3 Hardware Asset Impact</name>
         <natlang/>
@@ -410,15 +436,15 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>61ab1dae7cc303107f446db68b288826</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:25:54</sys_updated_on>
+        <sys_updated_on>2026-09-07 21:02:14</sys_updated_on>
         <type>subflow</type>
         <version>2</version>
     </sys_hub_flow_snapshot>
@@ -439,12 +465,12 @@
         <sys_updated_on>2026-09-03 17:25:54</sys_updated_on>
     </sys_flow_cat_variable_model>
     <sys_flow_cat_variable action="delete_multiple" query="flow_catalog_model=69ab1dae7cc303107f446db68b288826"/>
-    <sys_hub_flow_input action="delete_multiple" query="model=61ab1dae7cc303107f446db68b288826^sys_idNOT INe5ab1dae7cc303107f446db68b288827"/>
+    <sys_hub_flow_input action="delete_multiple" query="model=61ab1dae7cc303107f446db68b288826^sys_idNOT IN7c6d6ab7900b03107f440be6e09f1f9c"/>
     <sys_hub_flow_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=reference,uiTypeLabel=Reference,uiUniqueId=2cf47844-7137-4dad-aa1c-a29f6cbce36b</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=2cf47844-7137-4dad-aa1c-a29f6cbce36b</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -454,7 +480,7 @@
 })(current);]]></calculation>
         <choice/>
         <choice_field/>
-        <choice_table>alm_asset</choice_table>
+        <choice_table/>
         <column_label/>
         <comments/>
         <create_roles/>
@@ -476,10 +502,10 @@
         <function_field>false</function_field>
         <help/>
         <hint/>
-        <internal_type display_value="Reference">reference</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>asset_sys_id</label>
         <mandatory>false</mandatory>
-        <max_length>32</max_length>
+        <max_length>8000</max_length>
         <model display_value="Calculate Scope 3 Hardware Asset Impact">61ab1dae7cc303107f446db68b288826</model>
         <model_id>61ab1dae7cc303107f446db68b288826</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
@@ -489,7 +515,7 @@
         <primary>false</primary>
         <read_only>false</read_only>
         <read_roles/>
-        <reference display_value="" name="alm_asset">alm_asset</reference>
+        <reference/>
         <reference_cascade_rule/>
         <reference_floats>false</reference_floats>
         <reference_key/>
@@ -501,16 +527,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_input</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-09-03 17:25:54</sys_created_on>
-        <sys_id>e5ab1dae7cc303107f446db68b288827</sys_id>
+        <sys_created_on>2026-09-07 20:35:25</sys_created_on>
+        <sys_id>7c6d6ab7900b03107f440be6e09f1f9c</sys_id>
         <sys_mod_count>1</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:25:54</sys_updated_on>
+        <sys_updated_on>2026-09-07 20:35:25</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -523,13 +549,13 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_input>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=e5ab1dae7cc303107f446db68b288827"/>
-    <sys_hub_flow_output action="delete_multiple" query="model=61ab1dae7cc303107f446db68b288826^sys_idNOT INa5ab1dae7cc303107f446db68b288838"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=7c6d6ab7900b03107f440be6e09f1f9c"/>
+    <sys_hub_flow_output action="delete_multiple" query="model=61ab1dae7cc303107f446db68b288826^sys_idNOT INeb3b66f3900b03107f440be6e09f1ff0"/>
     <sys_hub_flow_output action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=decimal,uiTypeLabel=Decimal,uiUniqueId=b6b7c54f-6923-49de-ba49-e682409dbaae</attributes>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=string,uiTypeLabel=String,uiUniqueId=b6b7c54f-6923-49de-ba49-e682409dbaae</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -562,10 +588,10 @@
         <help/>
         <hint/>
         <internal_link/>
-        <internal_type display_value="Decimal">decimal</internal_type>
+        <internal_type display_value="String">string</internal_type>
         <label>total_co2e_impact_lbs</label>
         <mandatory>false</mandatory>
-        <max_length>15</max_length>
+        <max_length>8000</max_length>
         <model display_value="Calculate Scope 3 Hardware Asset Impact">61ab1dae7cc303107f446db68b288826</model>
         <model_id>61ab1dae7cc303107f446db68b288826</model_id>
         <model_table>sys_hub_flow_snapshot</model_table>
@@ -587,16 +613,16 @@
         <staged>false</staged>
         <sys_class_name>sys_hub_flow_output</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-09-03 17:25:54</sys_created_on>
-        <sys_id>a5ab1dae7cc303107f446db68b288838</sys_id>
+        <sys_created_on>2026-09-07 20:26:02</sys_created_on>
+        <sys_id>eb3b66f3900b03107f440be6e09f1ff0</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:25:54</sys_updated_on>
+        <sys_updated_on>2026-09-07 20:26:02</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -609,10 +635,10 @@
         <write_roles/>
         <xml_view>false</xml_view>
     </sys_hub_flow_output>
-    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=a5ab1dae7cc303107f446db68b288838"/>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=eb3b66f3900b03107f440be6e09f1ff0"/>
     <sys_hub_alias_mapping action="delete_multiple" query="source_id=61ab1dae7cc303107f446db68b288826"/>
     <sys_hub_trigger_instance_v2 action="delete_multiple" query="flow=61ab1dae7cc303107f446db68b288826"/>
-    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=61ab1dae7cc303107f446db68b288826^sys_idNOT IN39ab1dae7cc303107f446db68b288844,75ab1dae7cc303107f446db68b288842,7dab1dae7cc303107f446db68b288842,f9ab1dae7cc303107f446db68b288843"/>
+    <sys_hub_action_instance_v2 action="delete_multiple" query="flow=61ab1dae7cc303107f446db68b288826^sys_idNOT IN39ab1dae7cc303107f446db68b288844,641ae673900b03107f440be6e09f1ff6,75ab1dae7cc303107f446db68b288842,7dab1dae7cc303107f446db68b288842"/>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Create Record">2de05916c31332002841b63b12d3aee1</action_type>
         <action_type_parent display_value="Create Record">02f0b88cc3c632002841b63b12d3aeff</action_type_parent>
@@ -628,12 +654,34 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-03 17:25:54</sys_created_on>
         <sys_id>39ab1dae7cc303107f446db68b288844</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:25:54</sys_updated_on>
+        <sys_updated_on>2026-09-07 20:54:03</sys_updated_on>
         <ui_id>b3d12baf-4883-4599-a756-04aa44650e90</ui_id>
-        <values>H4sIAAAAAAAA/91VyW7bMBD9FYNnS9AW1fatSOqiQJsAcZBLmhAUOZIJUEtJKrFr+N87FGXHCBK0BXpJdRJneXxvNDO62xEpyILkMURn8zjnaZymSRQlsywu8rSIE5EygIxMScNqwEjLCgV0OEzJI1O9M26oaTiFxoLutDRAI7qhYCoq645xSzXwVgtMENJ0im1vx7xPq8+TL0PI5PoQwtdSCQ0NWdzdT0nHNF6FuGSxe+H6U+KKFaAw9MYxf0OI3Xav2r6e5k4uvQN5Oj7RlMDGQiMAiZRMGZiSmjWC2VZvycLqHg0amLhq1PYYsZaNRUDiYjdG/sRrZ5GLKwGVcfC+45GOFfPm8oJZtkJkbns9hvJ1KzkYXxMBJeuVPT+1+YCrzsq28SmDzDG7VX3dXPqSkCPA4QOhpcfPKaBzOh3zUUa5WrdP1weWS9kMJRmdquVMHU/MWi2L3jo+OwIKagSiNes62VS00+2jHJKRSx1WCg9hqdonvNTIqgmxOZB4iGVl4RLtF4P5lmnpVHxDGEzeT4nZmnPFjHnWgkWkP3rHxCsbNVBfBpfCtezsR7zgEUa6++lhIgRE8zcbKy6eG2kYAnMyDYa3HXzvoygVK/c6uVlrgAfeJlQ6ArKUILx/tyshZ1GWJQEkaRlkIJJgxotZwOdinmSznMFZFtrWMkURAKgqzH7/YNpeY3P4uTpCsTzKz2YQ5PGHPMiyGUJlURnwUrhRSMoij0I/ZyEWCiy1rHJgltneeJSlYlUFr4zq/yHqL5fL73vgsFyWEpQwrzTFYbNAjdW0QH2TvNguo3NyOzrHDRP/qw0T59HwvKM948W9+zVz8kd5Y+Hc/wJEsywhhAcAAA==</values>
+        <values>H4sIAAAAAAAA/9VUXW/aMBT9K8jPASVAWcrb1K7TpK2VytSXrrVu7Buw5DiZ7bQwxH/fdRwo6lptk/aw8oTv5znHPrndMiXZnM0yTE9Os5mYZJPJOE3H+TQrZpMiG8sJIE5ZwgxUSJUeCo28OyTsAXQbgmvujOBoPNrGKoc85WuObslV1YDw3KKoraQGqVyjYXPT931YfBx86koG1/sSsVJaWjRsfnuXsAYsraK5bL59lvpT4BoK1FT6NSB/hYjfNC/GPh/3Di5jgnAGPGnCcO3RSCQgJWiHCavASPC13bC5ty0FLIK8MnpzqFgp42kgC7Vrp37Q2jwNdSUSM4ExdzjyXrEYLs/Bw4ImC9/avlSsaiXQRU0kltBqf3YciwVXjVe1iS0dzb671m1lLqMk7DBgf0EUaek6JTaBZ0De0ygXq/rxeo/yQplOkj6pawH6cALvrSpaH/BsGWqsaBCvoGmUWfLG1g+qayYs1Wip6TAqdf1IS51amhE9DgI+IllhdEHx8y58A1YFFl9oDDXvEuY27kyDc09cSET+vQ1IIrOeA48yhBZhVePf04IH7OHukr0jJKanrz6srHh6SJ0J3JEbnKgb/Nam6UQuwt/B15VFvBf1mKsAQJUKZcxvt9MMxwA4G2alyIfT07wY5ie5GJbTdyc56ZvT0pGvPWgeBujC7Xb3rm4tvY1oqzgJdMVXYOUjWPzVaP8DpL809u/13xv7QqGW7oUL2bsaK9LCI48X9MzZfXJw0yd7d2f/yt3ZLO1+b8jjkdybt/jR1/wVs9/9BDQ+zP0ABwAA</values>
+    </sys_hub_action_instance_v2>
+    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
+        <action_type display_value="Calculate Scope 3 PO Carbon Impact Action">a5462efb90c703107f440be6e09f1f5a</action_type>
+        <action_type_parent display_value="Calculate Scope 3 PO Carbon Impact Action">7b356af790c703107f440be6e09f1f36</action_type_parent>
+        <attributes/>
+        <comment/>
+        <compiled_snapshot>a5462efb90c703107f440be6e09f1f5a</compiled_snapshot>
+        <display_text/>
+        <flow display_value="Calculate Scope 3 Hardware Asset Impact">61ab1dae7cc303107f446db68b288826</flow>
+        <generation_source/>
+        <order>3</order>
+        <parent_ui_id/>
+        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 20:20:55</sys_created_on>
+        <sys_id>641ae673900b03107f440be6e09f1ff6</sys_id>
+        <sys_mod_count>3</sys_mod_count>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 21:00:20</sys_updated_on>
+        <ui_id>41e2aae6-1fc8-498b-858c-f4758efe8b63</ui_id>
+        <values>H4sIAAAAAAAA/+VTXU/bMBT9K8jPdeWENB99QyCkSduQYOMFoejavqaWnA8SB+iq/vfdNEk7WKVtGtrLHn18P8459rnbMKvZkgGqNARjMqEScRqIxESRkBijyExgTMpmrIQCqbKtsdQ5FFVXekKfwHU9vNkYiEW8SJHHQRLzKEpDnkbCcGU0IEahkbGYX6OqGj1XVeu3W2rXtq0drG//bopaWacbLNny7n7GamiIqseGLTdvrn5XqwOJjkpverEnZ5PY4xb4db1DfWPLh/H8cRowgcS3JxTMGL54akdiYsC1OGMFlBp81az3SIOgr0p3AFaWNi0Z64tfWvuN9qVCiL7SIKlTONzuj/lo7ACbC/BAVDrlu2YsVavKKmwHXzQa6Jw//xEbCq5qb6tyaPEg3dRdua4oPw9+sP2A6R0J6Voigb1T2HMfhZibVfV8PbG8tOXOlfHSVQrc/gSevJOd7/lsWGe/vLF5QH4yGh0WtDEvoK4JyeumerK7LUS6mD84OsyNq56JXWsfyjmoXuGcngDml4Rf7OBbaGwv9xONoeZ+3dfSPnb4of9CYQQZJAHwNFhIHkEYcylkSL9UpKHOdJiCYtsZa9ftuYO2PRhFL5Q/dr3MwbbRoHzwuG9Rja39GZF6wtGL7WxKaRDFIRp5/OfG4eGLGlJVNXkDHl+FVCapNsSdxwoyHiVS8cxEpxwRAg1ZnGQLPcVrmHEspn8euV8TnyJ3udt6cj0wPypnDJxGZQty8nXiLvboGLnw3SIXLP7HwB1sfp24g9H/JHJpFAtIpORpmp3ySKqESy0XXMlAhFmoAsTsHSN3/x07cCjjGgcAAA==</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
@@ -650,12 +698,12 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-03 17:25:54</sys_created_on>
         <sys_id>75ab1dae7cc303107f446db68b288842</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:25:54</sys_updated_on>
+        <sys_updated_on>2026-09-07 21:02:14</sys_updated_on>
         <ui_id>fa60658e-6176-4482-840f-cfdaee42fb60</ui_id>
-        <values>H4sIAAAAAAAA/+VY32/jKBD+Vyw/pzk7v9O3VatIK+1tpW1vX/ZWCBvcoCPgBdxuGuV/v8Fgx0rcJNalUqt7ZBjgm5nvG7B/bEJGwuuQzKN5Np+PZ9MoGg6jaDIZpjhOkuEkTaIEj8JeKPCKgqfBCacwfMK8sGPMVwhrTQ3YCNM5x+vvfuqTN6dLxomiIrz+8bMX5ljBToaq8HqzN3UuFI4TysH1wWPZg2bWeT1E5ZyzfWkuC766CamIhRL1QvrbUEEoYMgw17QXrrAg2Ei1ri2KYnIn+M6wZMLAjqF1/q3ZC5w7i6xfRiGqlLq5eoh8hpw5u8UG3xtVpKZQ3jVdSpZS7fJBaIYLbm6aNudwlxsmhVviwnarJS9W4qtLR1hvUBUELIUGEDS3gVrkPozsfimfv1UoF0yUOfGTXKaY1yNsjGJJYSyeTUg5XcFGaIXznIlHlCv5xMrFgGXVf+Qw6GdcPsOhmj2KPk4t8D7kFfcXYL8tzd+xYjaKP2EbWAyAGAeGIFdCLQtVpvIJpbzQ5YTCQru9wm0v1Gt9w4GFu8gh5ehXYXG7PPiIkUuaXZIqlptPsMUT9cFte5UaxkcpON9RLpWCMItCNyQBaBAjfxewmGw2ukhsAvqlSJCb224P1XLmqo5iOh1JJaabZiht4XlZHdi+tG3gZRVfTFajKPpIwoLD35+uuivFpeCEXGJylGRkxyctlUEulw29HGqhM8/PgFDx/M4yM0jWr6HyNM8Y5aTt9ljYib3bY/D/vD3eJckBEEGuekxwJsqnAAB9K/aPj1Ivifd4VtKrcVdYG9bpoQZwYGTw0lkJZ8CplHAPZwcPDk8LxKrfl5TZ7/WV0QtgeDEBDAeXEcCmDrNOZEvOq9efrWbl/2L98b4/ULCxIN62CazTmXHXMwfbQwEPOym4STY3c/sK5y78THxFkb23bAFLWOrPQ06/6JmRR2p2p1deRJpnzP9pm/eMQ1WhyvDe4MkZH/3qSRpPTpahFVSO5fAyVjQFcmiEFUWZLARB/k28I5KtZMaUNt75sNF8o6AfEUgQZmCWNCi9g9q740V8Oo4qlZ+zoArEn6YDCCQoAwnqQLqF3aVpjS74OL1001pgxstqwOdO3ignVUqqVxrXiUIeYcSZXe1MUPFFQf33ttcmgdb2dwLrh/h2vnxrSilORgM8mQ7jOIriiEyj2XQazyZJNsHTUbbTKEJapNBNYecMqALbo4oaVZ3jw/7jm223PnMGqIqBt1LYr+rB1AQWFZQ3qFCdxu37SSIlp1jsNZQHQP7HorwRarqO311T+RA/kgr2sJ9pZ2rN9Vs9Gwr2l2C/CvrZUmxGo8EsJunVbBpPr0YZmVzNCR5f4Xkyng4JTUfZJV8CP/8FgZCim4wVAAA=</values>
+        <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjiv5S3ZuiwTGFmgboEl76RYEJVIxUZpUSSquY/i/71CUZMFWbAvrAAn2yOGQfDPz3pDSj43PiH/tk1kwS2ez8TQKguEwCCaTYYLDOB5OkjiI8cjv+QIvKXgaHHMKwyfMczvGfIkWWJEVVtZMmM44Xn8vZ//ezSQLxomiwr/+8bPnZ1jBfoYq/3qzN3UuII5jysH1oUS0B9Css3qIijln+9Rc5n1xE1IRCyXo+fSPoYJQwJBirmnPX2JBsJFqXVsUxeRO8J1hwYSBHX3r/EezZzh3Gli/lEJUCXVz9RCVSXLm9BYbfG9Unphcla7JQrKEapcPQlOcc3PTtDmHu8wwKdwSF7ZbLXm+FF9cOvx6g6omYMk1gKCZDdQiL8NI7xdy9bVCOWeiyEk5yWWCeT3CxigW58bi2fiU0yVshJY4y5h4RJmST6xYDFiW/UcOg37K5QoO1exR9HFigfchr7g/B/ttYf6OFbNRfIZtYDEAYhwYglwJtcxVkconlPBcFxMKC+328rc9X6/1Dcda7yKHlKPfucXt8lBGjFzS7JJEscz8BVs80TK4ba/SxPgoBWc7yiVSEGZR6IYwAA1i5J8cFpPNRuexTUAf4FGD3Nx2eyiYM1d1FNPpSCox3TRDaQuvlNWB7VPbBqWswovJahQE70lYcPjb01V3pbgUnJBLSI6SjOz4pKUyyOWyoZdDLXTm+RkQKp7fWWZ68folVCXNU0Y5abs95nZi7/YY/D9vjzdJcgBEkKseE5yJ4ikAQF+L/eOj1IvDPZ4V9GrcFdaGdXKoAewZ6T13VsIZcCol3MPZ3oPD0wKx6vcFZfZ7fWUsBTC8mACGg8sIYFOHWSeyJefV689Ws/J/tv543x8o2FgQbtsE1unMsOuZg+2hgIedFNwkm5u5fYFzF34mvqDI3mu2gAUsLc9DTr9oxcgjNbvTKy8izQrzX23zJeNQVagivFd4coZHv3rixpOTpWgJlWMZvIwVTYAcGsF3FkplLggq38Q7ItlKpkxpUzofNpqvFPQjPAnC9MyCeoW3V3t3vIhPx1Gl8mPqVYGUp2kPAvGKQLw6kG5hd2laows+Ti/dtOaY8aIa8LmTNcpJlZLqhcZ1opBHGHFmVzsTVHhRUP+97bVJoLX9ncD6Lr6dL9+aEorj0QBPomEYBkEYkCiYRlE4ncTpBEejdKdRhLRIoJvCzilQBbZHFTWqOoeH/adstt36zBmgKgbeSmG/qgeR8SwqKK9XoTqNu+wnsZScYrHXUB4A+Yd5cSPUdB2/uabyLn4k5exhP9PO1Jrr13o25OybYL9z+tFSbEqDwTQkydU0CqOrUUomVzOCx1d4Fo+jIaHJKL3kS+Dnv75qQwySFQAA</values>
     </sys_hub_action_instance_v2>
     <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
         <action_type display_value="Look Up Record">9d09f99587003300663ca1bb36cb0ba3</action_type>
@@ -673,36 +721,40 @@
         <sys_created_on>2026-09-03 17:25:54</sys_created_on>
         <sys_id>7dab1dae7cc303107f446db68b288842</sys_id>
         <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-09-03 17:25:54</sys_updated_on>
         <ui_id>b78dfa9a-6ca9-47bc-9f43-eea1da96795d</ui_id>
         <values>H4sIAAAAAAAA/+VYTW/bOBD9K4LOjlfyt3MrkvVugW6zqLO9dFuCIimbWJpUSSqOE+S/dyhKtmsrtoU6QII9cjgk38y8NyL15THkNLwM6Tgap+NxfzSMom43igaDLsFxknQHJIkS3AtbocQLBp4WJ4LB8A6L3I3vkZEEMWmZzjQ3DEXoHjEzQwTrREmUYmKVhgWUm0zg1edy3e/TP4KrwiWYVC5kzgXVTIaXX762wgxrOBL2DS8fd6ZOxSxwwgS43pagd2Kwq2w9RMWct33YXhZ89BNKUwclaoXs3jJJGWBIsTCsFS6wpBhCWK0tmmF6I8XGMOfSwo6hc743/AHOHUXOL2UQFWF+bj1EZba8Ob3GFk+tzonNdelK5ooTZnw+KEtxLuzVts073GSWK+mX+LD9aiXyhfzo0xGuN6iKA5YcSklZ5gJ1yMsw0ulcLT9VKCdcFjkpJ4UiWKxH2FrNk9w6PI8hE2wBG6EFzjIuZyjT6o4XiwHLoj0TMGinQi3hUMNnsg2cAOBtyCtuT8B+XZg/Y81dFH/BNsxRJuUCGIJ8CY3KdZHKO0REbooJjaXxe4VPrdCszJXAxmwih5Sj77nD7fNQRox80twSonlm38EWd6wM7qlVyaZ/kILjDeWIkpQ7FGZLOwRbNgPa/JvDcvon1nSJNftm8uTnmXfGMBv8rRWB8rs0BlMHc19Uv75hQwkej7+S4NV2AuqSUopxz/ahboNSjPHZxNiLorckRzj89amxub58Co6ILKYHSUY3fDJKW+RzuaWyfZk05vkJECqe3zhmBsnqOVQlzVPOBK375kzcxM43p/P//Oa8SpIDIIp89bgUXBYXCAD6UuzvH6ReEu/wrKDXhvuFDRuyrwEcWBU8NFbCCXAqJUzh7ODW46mBWPX7gjK7vb4ylgLonk0A3c55BPC4DnOdyJqcV3dGV83K/8H5411/oODWgvipTmCNzoybntl52hdwt5GCt8nmZ66f4dyZL5fPKLL1ki1gDkvL85DXL1pyOmN2c3rlRZVdYvFf3XzJOFQVqgjvBS6q8cG3UrJ1UeUpWkDleAb3ac0IkMMguEOiVOWSovImvSGSq2TKtbGl836j+cRAPzJQIMzAzllQeAdr74Yf4uNxVKl8nwZVIOVpJoBAgiKQYB1Is7CbNK3eGS+n525aE8xFUQ14JGVb5WRaFy/xusZ1pJAHGHFiVzsRVHxWUL/e9uokUNv+jmB9Ey/u87cmwnDS6+DBsBvHURRHdBiNhsN4NEjSAR720o1GUfGriSrYOQWqwPaookZV52i///iW2rTRnICqouC1ku5V3RnawMGC+gYVrOPAy4aSKCUYljsd5Ra+E79NSvwlX/uvrqu8if9POb/dzbQ31eb6pe4NOf9H8u85e+8oNmJRZxRTcjEaxsOLXkoHF2OK+xd4nPSHXcpILz3nVeDrDzIVjNPsFQAA</values>
     </sys_hub_action_instance_v2>
-    <sys_hub_action_instance_v2 action="INSERT_OR_UPDATE">
-        <action_type display_value="Calculate Scope 3 PO Carbon Impact">a5127eb9400303107f44ba0a715fe97b</action_type>
-        <action_type_parent display_value="Calculate Scope 3 PO Carbon Impact">9de07a75400303107f44ba0a715fe94b</action_type_parent>
+    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=61ab1dae7cc303107f446db68b288826"/>
+    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=61ab1dae7cc303107f446db68b288826^sys_idNOT IN7c6d6ab7900b03107f440be6e09f1faf"/>
+    <sys_hub_flow_logic_instance_v2 action="INSERT_OR_UPDATE">
         <attributes/>
+        <block display_value="">775d2ab7900b03107f440be6e09f1fb9</block>
         <comment/>
-        <compiled_snapshot>a5127eb9400303107f44ba0a715fe97b</compiled_snapshot>
+        <connected_to/>
+        <decision_table/>
         <display_text/>
         <flow display_value="Calculate Scope 3 Hardware Asset Impact">61ab1dae7cc303107f446db68b288826</flow>
+        <flow_variables_assigned/>
         <generation_source/>
-        <order>3</order>
+        <logic_definition display_value="Assign Subflow Outputs">df4e1945c3e232002841b63b12d3ae3e</logic_definition>
+        <order>5</order>
+        <outputs_assigned>total_co2e_impact_lbs</outputs_assigned>
         <parent_ui_id/>
-        <sys_class_name>sys_hub_action_instance_v2</sys_class_name>
+        <sys_class_name>sys_hub_flow_logic_instance_v2</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-09-03 17:25:54</sys_created_on>
-        <sys_id>f9ab1dae7cc303107f446db68b288843</sys_id>
-        <sys_mod_count>1</sys_mod_count>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_created_on>2026-09-07 20:35:25</sys_created_on>
+        <sys_id>7c6d6ab7900b03107f440be6e09f1faf</sys_id>
+        <sys_mod_count>13</sys_mod_count>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:25:54</sys_updated_on>
-        <ui_id>fe6a0442-e23f-4ed2-8cb8-c9d92486ae54</ui_id>
-        <values>H4sIAAAAAAAA/+1U227UMBD9FctPUHbTDck2zfJUURBIQCUWeOlW0SSxdw2OHXwpXar9d8a5bEuLuEg8IZ4SH8/lzJnxnF9TUdMFPYrjxxkr83Q2S2ZJPMt4mpYwgyyec5Yfl3RCFTQMLVtd2JapGpFLkD5A+FsL20rYfrhBqo2QtWGKLs4vJrQFg+6OGbq4vnP1u/kllEx+T+A+JbdtA1KzSjQgB+DV4Hm6R7WpA5V4QtmVQ0+GHDhIyya0AVWD02a7RwyD+kzJG2AjlOuLbODKiq+YMZ4HO86wqmoQYH8sBnF6mJ+Cg6UzvnLe7LXSomK216NmHLx0T29jvcFZ64RWvYuDUo7eWvpGvem1oPsAt3rhLZJgQSIWmA9l8OVGf3k7snwuVKfJcCl1hUqNJ3DOiNK7wOeaevHursw9dF9oJlmDOYsG2laoddEafSm6PEi7idYSDxGX+gvys2KtIqhCjRG2AKLniJ928AcwIhT8GsOgc8j3XonPnr0MwzODPEnLJJvGGWfTNM6TKdTV8RSgPI7TWTJP4ZjuJtRu7VMJ1t5IhT0qPvtQaC/cIFHRqxxcKiNad4KkLtEFu8ZGLAixHzz8/5klPTxYqYODkwobakko6/Ckq5OEOom3KA1xG0Z4XXSILj+yykVk2QUgjbeOGIYDowiQ7tlFJEQ8C3NMlG9K/AhLNOeWOVJuyaOYCEWeGaMNeYEjLUOKJevV7chcgpBBU6K7sbJkGFPiWyTWGqQafFY0WlECHN/uSC+4sytoWskWyMYQu9HGYacqsvL4gOvRMMKpWa+ZiSpvcMhc1BmGVnd1YdYnIdZQ2T5KAA9XaoBxdViGmoF7MIYt4qKQWn8qfFsYVuFrjoZPpa17+ITudrvJuNnmP90s/GaNdK0sOE6gNn95u/2aw7jd7pD4MbU/23KP/2+5f2HLldk8qflRPs05T6ZpFmfTPEuPpmXM81mSQp7n8Fe2XKfG7uIbJgmA3BsIAAA=</values>
-    </sys_hub_action_instance_v2>
-    <sys_hub_sub_flow_instance_v2 action="delete_multiple" query="flow=61ab1dae7cc303107f446db68b288826"/>
-    <sys_hub_flow_logic_instance_v2 action="delete_multiple" query="flow=61ab1dae7cc303107f446db68b288826"/>
+        <sys_updated_on>2026-09-07 21:02:14</sys_updated_on>
+        <ui_id>af9cef60-1b68-4371-93b5-b0b9fa7bfd3e</ui_id>
+        <values>H4sIAAAAAAAA/6VTXW/aMBT9L34mKEAICW9Vq0qVulVaWV+mKbp2rsGqY6exA2WI/75rEgJqpW3S3uJzv8459+bAbOvr1ruVvXFOrQ1b/jgwVbIlm81nfJrKWR7HPJ5N4oVMkphjinEuJ1KUbMQMVEiZ3nrQhbBTLFRVg/CF5o7CW9BtiB8OyQSnAJhGVJhFSZ7xKJtnIpLJYp6hxIyns/HQJpQfj9SgVK7WsH/53z5io3TZYBD3c8RqaIi3x4YtSaqhDwP6UZlXGvEp+V+t0MBR/8GLv1jl93UIO98os+7fj33L5zNomzKQnowYvns0JRI3CdrhiFVgSvC22Q9Ig1A+GX0BNiS1U1jBu1O/aF4Wx3HIlEh6BXbR4Vn09newvAMPRKUVvm3wbJVVAl3nVIkSWu1vr7Eu4an2ypquxAPX52qr28p87YxhQ4PztglpHZHAOkgN3Hsh8nljd9/OLO+VObnSB7UVoIcXePKOtz7wObBWrT7Y3CGfjEaNFU0sKqhrQoq6sVt1mkKkq/Fa02Mstd0Ru/DTjGmRpHBMK4DxPeF3J/gFGhXkfqE2VBzGfTfqrcWHcFQ85QsxT2SU5tMZ3XKJEYckjzDNpkmcl5wOnR1HzO3drQbnLkbRhoq3NsjsbOsNKjqPQ4loVO1viNQWey+O4ZZN+NO7zWx7bsPyhHIkYRWwh6u8ck+Xq8Q1tLPNaxB/wY6/Ab2cuqtHBAAA</values>
+        <workflow_reference/>
+    </sys_hub_flow_logic_instance_v2>
     <sys_hub_pill_compound action="delete_multiple" query="attached_to=61ab1dae7cc303107f446db68b288826"/>
     <sys_hub_flow_variable action="delete_multiple" query="model=61ab1dae7cc303107f446db68b288826"/>
     <sys_documentation action="INSERT_OR_UPDATE">
@@ -715,16 +767,16 @@
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-09-03 17:25:54</sys_created_on>
-        <sys_id>a1ab1dae7cc303107f446db68b288834</sys_id>
+        <sys_created_on>2026-09-07 20:35:25</sys_created_on>
+        <sys_id>fc6d6ab7900b03107f440be6e09f1fa4</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_package display_value="Enterprise Carbon AI Agent " source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:25:54</sys_updated_on>
+        <sys_updated_on>2026-09-07 20:35:25</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -739,16 +791,16 @@
         <plural/>
         <sys_class_name>sys_documentation</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2026-09-03 17:25:54</sys_created_on>
-        <sys_id>edab1dae7cc303107f446db68b28883c</sys_id>
+        <sys_created_on>2026-09-07 20:26:02</sys_created_on>
+        <sys_id>233b66f3900b03107f440be6e09f1ff5</sys_id>
         <sys_mod_count>0</sys_mod_count>
         <sys_name/>
-        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_package display_value="Enterprise Carbon AI Agent " source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:25:54</sys_updated_on>
+        <sys_updated_on>2026-09-07 20:26:02</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
@@ -756,23 +808,23 @@
     <sys_hub_flow action="UPDATE">
         <sys_id>fc44416e7c4303107f446db68b2888ee</sys_id>
         <latest_snapshot>61ab1dae7cc303107f446db68b288826</latest_snapshot>
-        <compiler_build/>
+        <compiler_build>glide-yokohama-12-18-2024__patch1-02-21-2025_03-05-2025_2133.zip</compiler_build>
     </sys_hub_flow>
     <sys_flow_trigger_plan action="delete_multiple" query="plan_id=fc44416e7c4303107f446db68b2888ee"/>
     <sys_flow_subflow_plan action="delete_multiple" query="plan_id=fc44416e7c4303107f446db68b2888ee^sys_idNOT INf5ab1dae7cc303107f446db68b288872"/>
     <sys_flow_subflow_plan action="INSERT_OR_UPDATE">
-        <plan>com.snc.process_flow.engine.ProcessPlan@791e1e26</plan>
+        <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_flow_subflow_plan","id":"f5ab1dae7cc303107f446db68b288872","name":"plan","plan_signature":null}}</plan>
         <plan_id display_value="Calculate Scope 3 Hardware Asset Impact">fc44416e7c4303107f446db68b2888ee</plan_id>
-        <snapshot>61ab1dae7cc303107f446db68b288826</snapshot>
+        <snapshot>f5933e33904b03107f440be6e09f1fc1</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-03 17:25:54</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>f5ab1dae7cc303107f446db68b288872</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>8</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 17:25:54</sys_updated_on>
+        <sys_updated_on>2026-09-07 21:02:14</sys_updated_on>
     </sys_flow_subflow_plan>
 </record_update>
