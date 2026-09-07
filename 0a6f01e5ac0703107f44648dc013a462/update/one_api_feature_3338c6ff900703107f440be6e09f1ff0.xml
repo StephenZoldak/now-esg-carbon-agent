@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="one_api_feature">
+    <one_api_feature action="INSERT_OR_UPDATE">
+        <input_processor display_value="OneExtendGenericCapabilityRequestProcessor">a7eb538353111110c271ddeeff7b12a8</input_processor>
+        <name>307ed7f77f441210562b37e0fc866523</name>
+        <output_processor display_value="OneExtendCapabilityResponseProcessor">3a90ff027f50121032d293f10d866518</output_processor>
+        <short_description>Auto Generated </short_description>
+        <sys_class_name>one_api_feature</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-07 17:53:08</sys_created_on>
+        <sys_id>3338c6ff900703107f440be6e09f1ff0</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>307ed7f77f441210562b37e0fc866523</sys_name>
+        <sys_package display_value="Enterprise Carbon AI Agent " source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name>one_api_feature_3338c6ff900703107f440be6e09f1ff0</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-07 17:53:08</sys_updated_on>
+    </one_api_feature>
+</record_update>
