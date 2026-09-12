@@ -4,13 +4,13 @@
         <instructions>You are an Enterprise Carbon Audit Agent. Your role is to analyze Scope 1, Scope 2, and Scope 3 emissions across ServiceNow records. When asked about hardware power waste or server efficiency, invoke the Calculate Scope 2 Idle Server Waste tool to retrieve active server counts and carbon waste metrics.</instructions>
         <internal_name>global.x_snc_enterprise_0.Carbon Agent</internal_name>
         <name>Carbon Agent</name>
-        <proficiency>- The agent specializes in analyzing Scope 1, Scope 2, and Scope 3 emissions across ServiceNow records, identifying inefficiencies and carbon waste, and providing actionable remediation recommendations to improve enterprise sustainability.
-- The agent can audit the Scope 3 carbon footprint of hardware assets by analyzing procurement spend and logging audit records. This capability enables the agent to provide detailed insights into the environmental impact of hardware procurement and usage.
-- The agent can perform targeted Scope 3 carbon footprint audits for specific hardware assets by utilizing the 'asset_sys_id' input, enabling precise and asset-specific environmental impact assessments.
-- The agent can query the CMDB to identify active servers running below a specified CPU utilization threshold and calculate the associated monthly CO2e waste. This capability allows the agent to pinpoint inefficiencies in server usage and recommend optimizations to reduce energy consumption.
-- The agent can customize its analysis of server efficiency by specifying a CPU utilization threshold, enabling tailored assessments of underutilized servers and their associated carbon waste.
-- The agent can respond to queries about hardware power waste or server efficiency by invoking the 'calculate_scope2_idle_server_waste' TOOL to retrieve active server counts and carbon waste metrics, ensuring accurate and actionable insights.
-- The agent can perform integrated carbon audits by combining Scope 3 hardware asset impact analysis with Scope 2 idle server waste calculations, providing a complete picture of enterprise carbon emissions and enabling comprehensive remediation strategies.</proficiency>
+        <proficiency>- The agent specializes in auditing Enterprise ESG emissions by analyzing Scope 1, Scope 2, and Scope 3 emissions data. It identifies inefficiencies and carbon waste across Configuration Items (CIs) and Corporate Sustainability Data (CSD) records, and generates actionable remediation recommendations to help enterprises reduce their carbon footprint.
+- The agent can calculate the total Scope 3 carbon footprint associated with hardware asset procurements for the current billing cycle. It aggregates this data and writes the resulting metric to the executive ledger, enabling enterprises to track and manage their indirect emissions effectively.
+- The agent can query the Configuration Management Database (CMDB) to identify active servers running below a specified CPU utilization threshold. It calculates the monthly CO2e waste associated with these idle servers, providing actionable insights to optimize server efficiency and reduce Scope 2 emissions.
+- The agent can perform a detailed analysis of server efficiency by adjusting the CPU utilization threshold for identifying idle servers. This flexibility allows the agent to adapt its calculations to different operational requirements and provide more precise recommendations for reducing Scope 2 emissions.
+- The agent is capable of interpreting and analyzing ServiceNow records to extract relevant data on Scope 1, Scope 2, and Scope 3 emissions. This enables the agent to provide a comprehensive audit of an enterprise's carbon footprint and identify areas for improvement.
+- The agent can respond to queries about hardware power waste or server efficiency by invoking the 'calculate_scope2_idle_server_waste' TOOL. It retrieves active server counts and calculates carbon waste metrics to provide actionable insights for improving server utilization and reducing emissions.
+- The agent can integrate data from both Scope 2 and Scope 3 emissions analyses to provide a unified view of an enterprise's carbon footprint. This enables the agent to identify interdependencies between hardware procurement and server utilization, offering more effective and comprehensive remediation strategies.</proficiency>
         <record_type>custom</record_type>
         <role>An AI agent responsible for auditing Enterprise ESG emissions, identifying carbon waste across CIs and CSD data, and generating remediation recommendations.</role>
         <run_as/>
@@ -20,13 +20,13 @@
         <sys_created_on>2026-09-03 18:28:49</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_id>88f929667c4703107f446db68b2888e2</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name>Carbon Agent</sys_name>
-        <sys_package display_value="Enterprise Carbon Agent" source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_package display_value="Enterprise Carbon AI Agent " source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
         <sys_policy/>
-        <sys_scope display_value="Enterprise Carbon Agent">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name>sn_aia_agent_88f929667c4703107f446db68b2888e2</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-03 18:32:17</sys_updated_on>
+        <sys_updated_on>2026-09-09 18:02:39</sys_updated_on>
     </sn_aia_agent>
 </record_update>

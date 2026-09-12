@@ -16,7 +16,7 @@
         <flow_priority/>
         <ih_action>false</ih_action>
         <internal_name>calculate_scope_3_po_carbon_impact_action</internal_name>
-        <label_cache>[{"name":"{{action.spend_amount}}","label":"action➛Spend Amount","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Decimal","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"decimal","uiUniqueId":"24a9a71a-815b-4a26-b0b2-cf082d9d28ac"}},{"name":"{{action.factor_rate}}","label":"action➛Factor Rate","type":"action","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[878902e4-1276-4938-b7cb-8d1952b6fb64].total_co2e_lbs}}","label":"step➛Script step➛total_co2e_lbs","type":"step","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.spend_amount}}","label":"action➛Spend Amount","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Decimal","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"decimal","uiUniqueId":"24a9a71a-815b-4a26-b0b2-cf082d9d28ac"}},{"name":"{{action.factor_rate}}","label":"action➛Factor Rate","type":"action","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.hardware_records}}","label":"action➛Hardware Records","type":"action","ref":"","reference_display":"Hardware","base_type":"records","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[878902e4-1276-4938-b7cb-8d1952b6fb64].total_co2e_lbs}}","label":"step➛Script step➛total_co2e_lbs","type":"step","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master_snapshot>a5462efb90c703107f440be6e09f1f5a</master_snapshot>
         <master_snapshot_digest/>
         <name>Calculate Scope 3 PO Carbon Impact Action</name>
@@ -31,7 +31,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>7b356af790c703107f440be6e09f1f36</sys_id>
-        <sys_mod_count>17</sys_mod_count>
+        <sys_mod_count>27</sys_mod_count>
         <sys_name>Calculate Scope 3 PO Carbon Impact Action</sys_name>
         <sys_overrides/>
         <sys_package display_value="Enterprise Carbon AI Agent " source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
@@ -39,7 +39,7 @@
         <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name>sys_hub_action_type_definition_7b356af790c703107f440be6e09f1f36</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-07 20:40:20</sys_updated_on>
+        <sys_updated_on>2026-09-09 19:05:24</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_definition>
@@ -53,10 +53,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-07 20:01:30</sys_created_on>
         <sys_id>4ca5aabb90c703107f440be6e09f1f65</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-07 20:01:30</sys_updated_on>
-        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <sys_updated_on>2026-09-09 17:55:02</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">7395aabb90c703107f440be6e09f1f51</variable>
     </sys_variable_value>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -142,10 +142,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-07 20:01:29</sys_created_on>
         <sys_id>fb95aabb90c703107f440be6e09f1f41</sys_id>
-        <sys_mod_count>3</sys_mod_count>
+        <sys_mod_count>5</sys_mod_count>
         <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-07 20:40:15</sys_updated_on>
+        <sys_updated_on>2026-09-09 19:05:19</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=fb95aabb90c703107f440be6e09f1f41"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -156,18 +156,30 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-07 20:01:29</sys_created_on>
         <sys_id>3395aabb90c703107f440be6e09f1f4f</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-07 20:40:15</sys_updated_on>
+        <sys_updated_on>2026-09-09 19:05:19</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
-    // Strip dollar signs, commas, and currency codes (e.g. "$3,665.00" -&gt; "3665.00")&#13;
-    var rawSpend = String(inputs.spend || '').replace(/[^0-9.]/g, '');&#13;
-    var spend = parseFloat(rawSpend) || 0;&#13;
+    var totalSpend = 0;&#13;
     &#13;
-    var rawFactor = String(inputs.factor || '').replace(/[^0-9.]/g, '');&#13;
+    if (inputs.hardware_records) {&#13;
+        var gr = inputs.hardware_records;&#13;
+        &#13;
+        // Iterate through all records returned by Look Up Records&#13;
+        while (gr.next()) {&#13;
+            // Get raw cost string and sanitize currency formatting&#13;
+            var rawCost = String(gr.getValue('cost') || gr.cost || '').replace(/[^0-9.]/g, '');&#13;
+            var cost = parseFloat(rawCost) || 0;&#13;
+            totalSpend += cost;&#13;
+        }&#13;
+    }&#13;
+    &#13;
+    // Get factor rate&#13;
+    var rawFactor = String(inputs.factor_rate || inputs.factor || '0.42').replace(/[^0-9.]/g, '');&#13;
     var factor = parseFloat(rawFactor) || 0;&#13;
     &#13;
-    var totalCo2e = spend * factor;&#13;
+    // Calculate final CO2e&#13;
+    var totalCo2e = totalSpend * factor;&#13;
     outputs.total_co2e_lbs = totalCo2e.toFixed(2);&#13;
 })(inputs, outputs);</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -240,6 +252,18 @@
         <value>{{action.factor_rate}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>hardware_records</field>
+        <id>fb95aabb90c703107f440be6e09f1f41</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 17:55:01</sys_created_on>
+        <sys_id>7adb1068515303107f44c0ff078405ba</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 17:55:01</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_fb95aabb90c703107f440be6e09f1f41</table>
+        <value>{{action.hardware_records}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script</field>
         <id>fb95aabb90c703107f440be6e09f1f41</id>
         <sys_created_by>admin</sys_created_by>
@@ -266,7 +290,90 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_fb95aabb90c703107f440be6e09f1f41^id=fb95aabb90c703107f440be6e09f1f41"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=fb95aabb90c703107f440be6e09f1f41"/>
     <sys_translated_text action="delete_multiple" query="documentkey=fb95aabb90c703107f440be6e09f1f41"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=fb95aabb90c703107f440be6e09f1f41^sys_idNOT INa046eafb90c703107f440be6e09f1f0d,a446eafb90c703107f440be6e09f1f10"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=fb95aabb90c703107f440be6e09f1f41^sys_idNOT IN76db1068515303107f44c0ff07840594,a046eafb90c703107f440be6e09f1f0d,a446eafb90c703107f440be6e09f1f10"/>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>hardware_records</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label/>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Script step">fb95aabb90c703107f440be6e09f1f41</model>
+        <model_id>fb95aabb90c703107f440be6e09f1f41</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_fb95aabb90c703107f440be6e09f1f41</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="alm_hardware">alm_hardware</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 17:55:00</sys_created_on>
+        <sys_id>76db1068515303107f44c0ff07840594</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 17:55:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -541,7 +648,91 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_input action="delete_multiple" query="model=7b356af790c703107f440be6e09f1f36^sys_idNOT IN3395aabb90c703107f440be6e09f1f06,5dc8e6ff90c703107f440be6e09f1f1f"/>
+    <sys_hub_action_input action="delete_multiple" query="model=7b356af790c703107f440be6e09f1f36^sys_idNOT IN2adb1068515303107f44c0ff0784055e,3395aabb90c703107f440be6e09f1f06,5dc8e6ff90c703107f440be6e09f1f1f"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records,uiUniqueId=c4332664-45fd-4f04-ac22-486bb9c511d4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>alm_hardware</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>hardware_records</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>Hardware Records</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Calculate Scope 3 PO Carbon Impact Action">7b356af790c703107f440be6e09f1f36</model>
+        <model_id>7b356af790c703107f440be6e09f1f36</model_id>
+        <model_table>sys_hub_action_type_definition</model_table>
+        <name>var__m_sys_hub_action_input_7b356af790c703107f440be6e09f1f36</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="alm_hardware">alm_hardware</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 17:55:00</sys_created_on>
+        <sys_id>2adb1068515303107f44c0ff0784055e</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 17:55:00</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=2adb1068515303107f44c0ff0784055e"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -950,14 +1141,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-07 20:01:29</sys_created_on>
         <sys_id>c4a5aabb90c703107f440be6e09f1f5a</sys_id>
-        <sys_mod_count>13</sys_mod_count>
+        <sys_mod_count>21</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-07 20:40:18</sys_updated_on>
+        <sys_updated_on>2026-09-09 19:05:22</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -984,6 +1175,29 @@
         <sys_updated_on>2026-09-07 20:01:30</sys_updated_on>
     </sys_hub_action_status_metadata>
     <sys_hub_status_condition action="delete_multiple" query="action_status_metadata_id=44a5aabb90c703107f440be6e09f1f67"/>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>hardware_records</element>
+        <help/>
+        <hint/>
+        <label>Hardware Records</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_7b356af790c703107f440be6e09f1f36</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 17:55:00</sys_created_on>
+        <sys_id>2edb1068515303107f44c0ff07840564</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon AI Agent " source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 17:55:00</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
     <sys_documentation action="INSERT_OR_UPDATE">
         <element>spend_amount</element>
         <help/>
@@ -1105,17 +1319,17 @@
     <sys_hub_action_plan action="INSERT_OR_UPDATE">
         <action_id display_value="Calculate Scope 3 PO Carbon Impact Action">7b356af790c703107f440be6e09f1f36</action_id>
         <plan>{"type":"PlanProxy","persistor":{"@class":".ChunkingPlanPersistor","table":"sys_hub_action_plan","id":"c2462efb90c703107f440be6e09f1fe3","name":"plan","plan_signature":null}}</plan>
-        <snapshot>4d8e6a3b900b03107f440be6e09f1f18</snapshot>
+        <snapshot>b9fb6c6051d303107f44c0ff07840528</snapshot>
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-07 20:04:22</sys_created_on>
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>c2462efb90c703107f440be6e09f1fe3</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_overrides/>
         <sys_scope/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-07 20:40:21</sys_updated_on>
+        <sys_updated_on>2026-09-09 19:05:25</sys_updated_on>
     </sys_hub_action_plan>
     <sys_hub_action_type_snapshot action="INSERT_OR_UPDATE">
         <access>public</access>
@@ -1132,7 +1346,7 @@
         <description/>
         <flow_priority/>
         <internal_name>calculate_scope_3_po_carbon_impact_action</internal_name>
-        <label_cache>[{"name":"{{action.spend_amount}}","label":"action➛Spend Amount","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Decimal","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"decimal","uiUniqueId":"24a9a71a-815b-4a26-b0b2-cf082d9d28ac"}},{"name":"{{action.factor_rate}}","label":"action➛Factor Rate","type":"action","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[878902e4-1276-4938-b7cb-8d1952b6fb64].total_co2e_lbs}}","label":"step➛Script step➛total_co2e_lbs","type":"step","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
+        <label_cache>[{"name":"{{action.spend_amount}}","label":"action➛Spend Amount","type":"action","ref":"","reference_display":"","base_type":"string","parent_table_name":"","column_name":"","choices":null,"attributes":{"uiTypeLabel":"Decimal","element_mapping_provider":"com.glide.flow_design.action.data.FlowDesignVariableMapper","uiType":"decimal","uiUniqueId":"24a9a71a-815b-4a26-b0b2-cf082d9d28ac"}},{"name":"{{action.factor_rate}}","label":"action➛Factor Rate","type":"action","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{action.hardware_records}}","label":"action➛Hardware Records","type":"action","ref":"","reference_display":"Hardware","base_type":"records","parent_table_name":"","column_name":"","choices":null,"attributes":{}},{"name":"{{step[878902e4-1276-4938-b7cb-8d1952b6fb64].total_co2e_lbs}}","label":"step➛Script step➛total_co2e_lbs","type":"step","ref":"","reference_display":"","base_type":"decimal","parent_table_name":"","column_name":"","choices":null,"attributes":{"sourceId":"","sourceUiUniqueId":"","sourceType":""}}]</label_cache>
         <master>true</master>
         <name>Calculate Scope 3 PO Carbon Impact Action</name>
         <natlang/>
@@ -1145,7 +1359,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a5462efb90c703107f440be6e09f1f5a</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>2</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package/>
@@ -1153,7 +1367,7 @@
         <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-07 20:15:19</sys_updated_on>
+        <sys_updated_on>2026-09-09 17:55:13</sys_updated_on>
         <system_level>false</system_level>
         <type/>
     </sys_hub_action_type_snapshot>
@@ -1195,10 +1409,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-07 20:04:21</sys_created_on>
         <sys_id>fd462efb90c703107f440be6e09f1fa2</sys_id>
-        <sys_mod_count>0</sys_mod_count>
+        <sys_mod_count>1</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-07 20:04:21</sys_updated_on>
-        <value>{"version":"1.0","serializationFormat":"JSON","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}}}</value>
+        <sys_updated_on>2026-09-09 17:55:14</sys_updated_on>
+        <value>{"version":"1.0","complexObjectSchema":{"FlowDesigner:FDACTIONSTATUS":{"code":"Integer","code.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"Integer\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"integer\",\"default_value\":\"\",\"label\":\"Code\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"1\",\"max_length\":\"40\"}"},"message":"String","message.$field_facets":{"SimpleMapFacet":"{\"uiTypeLabel\":\"String\",\"read_only\":\"false\",\"hint\":\"\",\"uiType\":\"string\",\"default_value\":\"\",\"label\":\"Message\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"order\":\"2\",\"max_length\":\"4000\"}"}},"FlowDesigner:FDACTIONSTATUS.$type_facets":{"SimpleMapFacet":"{\"default_value\":\"\",\"label\":\"Action Status\",\"action_error_output\":\"true\",\"mandatory\":\"false\",\"uiUniqueId\":\"794bc342-9c9d-444b-a3f2-dd4b6a5a0173\",\"uiTypeLabel\":\"Object\",\"co_type_name\":\"FDACTIONSTATUS\",\"element_mapping_provider\":\"com.glide.flow_design.action.data.FlowDesignVariableMapper\",\"read_only\":\"false\",\"hint\":null,\"uiType\":\"object\",\"order\":\"1\",\"max_length\":\"65000\"}"}},"complexObject":{"code":{"$cv":{"$c":"java.lang.String","$v":""}},"message":{"$cv":{"$c":"java.lang.String","$v":""}}},"serializationFormat":"JSON"}</value>
         <variable display_value="Action Status">39462efb90c703107f440be6e09f1f8f</variable>
     </sys_variable_value>
     <sys_element_mapping action="delete_multiple" query="id=a5462efb90c703107f440be6e09f1f5a"/>
@@ -1256,10 +1470,10 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-07 20:04:20</sys_created_on>
         <sys_id>61462efb90c703107f440be6e09f1f6a</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-07 20:40:20</sys_updated_on>
+        <sys_updated_on>2026-09-09 19:05:24</sys_updated_on>
     </sys_hub_step_instance>
     <sys_variable_value action="delete_multiple" query="document_key=61462efb90c703107f440be6e09f1f6a"/>
     <sys_variable_value action="INSERT_OR_UPDATE">
@@ -1284,18 +1498,30 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-07 20:04:21</sys_created_on>
         <sys_id>bd462efb90c703107f440be6e09f1f8b</sys_id>
-        <sys_mod_count>1</sys_mod_count>
+        <sys_mod_count>3</sys_mod_count>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-07 20:40:20</sys_updated_on>
+        <sys_updated_on>2026-09-09 19:05:24</sys_updated_on>
         <value>(function execute(inputs, outputs) {&#13;
-    // Strip dollar signs, commas, and currency codes (e.g. "$3,665.00" -&gt; "3665.00")&#13;
-    var rawSpend = String(inputs.spend || '').replace(/[^0-9.]/g, '');&#13;
-    var spend = parseFloat(rawSpend) || 0;&#13;
+    var totalSpend = 0;&#13;
     &#13;
-    var rawFactor = String(inputs.factor || '').replace(/[^0-9.]/g, '');&#13;
+    if (inputs.hardware_records) {&#13;
+        var gr = inputs.hardware_records;&#13;
+        &#13;
+        // Iterate through all records returned by Look Up Records&#13;
+        while (gr.next()) {&#13;
+            // Get raw cost string and sanitize currency formatting&#13;
+            var rawCost = String(gr.getValue('cost') || gr.cost || '').replace(/[^0-9.]/g, '');&#13;
+            var cost = parseFloat(rawCost) || 0;&#13;
+            totalSpend += cost;&#13;
+        }&#13;
+    }&#13;
+    &#13;
+    // Get factor rate&#13;
+    var rawFactor = String(inputs.factor_rate || inputs.factor || '0.42').replace(/[^0-9.]/g, '');&#13;
     var factor = parseFloat(rawFactor) || 0;&#13;
     &#13;
-    var totalCo2e = spend * factor;&#13;
+    // Calculate final CO2e&#13;
+    var totalCo2e = totalSpend * factor;&#13;
     outputs.total_co2e_lbs = totalCo2e.toFixed(2);&#13;
 })(inputs, outputs);</value>
         <variable display_value="Script">71aa7f6647032200b4fad7527c9a719b</variable>
@@ -1354,6 +1580,18 @@
         <value>{{action.factor_rate}}</value>
     </sys_element_mapping>
     <sys_element_mapping action="INSERT_OR_UPDATE">
+        <field>hardware_records</field>
+        <id>61462efb90c703107f440be6e09f1f6a</id>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 17:55:14</sys_created_on>
+        <sys_id>71eb9068515303107f44c0ff078405b3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 17:55:14</sys_updated_on>
+        <table>var__m_sys_hub_step_ext_input_61462efb90c703107f440be6e09f1f6a</table>
+        <value>{{action.hardware_records}}</value>
+    </sys_element_mapping>
+    <sys_element_mapping action="INSERT_OR_UPDATE">
         <field>script</field>
         <id>61462efb90c703107f440be6e09f1f6a</id>
         <sys_created_by>admin</sys_created_by>
@@ -1380,7 +1618,7 @@
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_hub_step_ext_output_61462efb90c703107f440be6e09f1f6a^id=61462efb90c703107f440be6e09f1f6a"/>
     <sys_element_mapping action="delete_multiple" query="table=var__m_sys_flow_step_definition_input_106afb6647032200b4fad7527c9a71e7^id=61462efb90c703107f440be6e09f1f6a"/>
     <sys_translated_text action="delete_multiple" query="documentkey=61462efb90c703107f440be6e09f1f6a"/>
-    <sys_hub_step_ext_input action="delete_multiple" query="model=61462efb90c703107f440be6e09f1f6a^sys_idNOT IN6d462efb90c703107f440be6e09f1f71,ad462efb90c703107f440be6e09f1f6d"/>
+    <sys_hub_step_ext_input action="delete_multiple" query="model=61462efb90c703107f440be6e09f1f6a^sys_idNOT IN6d462efb90c703107f440be6e09f1f71,7deb9068515303107f44c0ff07840598,ad462efb90c703107f440be6e09f1f6d"/>
     <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1452,6 +1690,89 @@
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-09-07 20:04:20</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_step_ext_input>
+    <sys_hub_step_ext_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table/>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>hardware_records</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>hardware_records</label>
+        <mandatory>true</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Script step">61462efb90c703107f440be6e09f1f6a</model>
+        <model_id>61462efb90c703107f440be6e09f1f6a</model_id>
+        <model_table>sys_hub_step_instance</model_table>
+        <name>var__m_sys_hub_step_ext_input_61462efb90c703107f440be6e09f1f6a</name>
+        <next_element/>
+        <order>200</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="alm_hardware">alm_hardware</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_step_ext_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 17:55:13</sys_created_on>
+        <sys_id>7deb9068515303107f44c0ff07840598</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 17:55:13</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -1655,7 +1976,91 @@
         <url/>
         <url_target/>
     </sys_documentation>
-    <sys_hub_action_input action="delete_multiple" query="model=a5462efb90c703107f440be6e09f1f5a^sys_idNOT INa1462efb90c703107f440be6e09f1f62,aec82aff90c703107f440be6e09f1ff8"/>
+    <sys_hub_action_input action="delete_multiple" query="model=a5462efb90c703107f440be6e09f1f5a^sys_idNOT IN75eb9068515303107f44c0ff07840556,a1462efb90c703107f440be6e09f1f62,aec82aff90c703107f440be6e09f1ff8"/>
+    <sys_hub_action_input action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <array>false</array>
+        <array_denormalized>false</array_denormalized>
+        <attributes>element_mapping_provider=com.glide.flow_design.action.data.FlowDesignVariableMapper,uiType=records,uiTypeLabel=Records,uiUniqueId=c4332664-45fd-4f04-ac22-486bb9c511d4</attributes>
+        <audit>false</audit>
+        <calculation><![CDATA[(function calculatedFieldValue(current) {
+
+	// Add your code here
+	return '';  // return the calculated value
+
+})(current);]]></calculation>
+        <choice/>
+        <choice_field/>
+        <choice_table>alm_hardware</choice_table>
+        <column_label/>
+        <comments/>
+        <create_roles/>
+        <default_value/>
+        <defaultsort/>
+        <delete_roles/>
+        <dependent/>
+        <dependent_on_field/>
+        <display>false</display>
+        <dynamic_creation>false</dynamic_creation>
+        <dynamic_creation_script/>
+        <dynamic_default_value/>
+        <dynamic_ref_qual/>
+        <element>hardware_records</element>
+        <element_reference>false</element_reference>
+        <foreign_database/>
+        <formula/>
+        <function_definition/>
+        <function_field>false</function_field>
+        <help/>
+        <hint/>
+        <internal_type display_value="Records">records</internal_type>
+        <label>Hardware Records</label>
+        <mandatory>false</mandatory>
+        <max_length>1024</max_length>
+        <model display_value="Calculate Scope 3 PO Carbon Impact Action">a5462efb90c703107f440be6e09f1f5a</model>
+        <model_id>a5462efb90c703107f440be6e09f1f5a</model_id>
+        <model_table>sys_hub_action_type_snapshot</model_table>
+        <name>var__m_sys_hub_action_input_a5462efb90c703107f440be6e09f1f5a</name>
+        <next_element/>
+        <order>3</order>
+        <primary>false</primary>
+        <read_only>false</read_only>
+        <read_roles/>
+        <reference display_value="" name="alm_hardware">alm_hardware</reference>
+        <reference_cascade_rule/>
+        <reference_floats>false</reference_floats>
+        <reference_key/>
+        <reference_qual/>
+        <reference_qual_condition/>
+        <reference_type/>
+        <sizeclass/>
+        <spell_check>false</spell_check>
+        <staged>false</staged>
+        <sys_class_name>sys_hub_action_input</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 17:55:13</sys_created_on>
+        <sys_id>75eb9068515303107f44c0ff07840556</sys_id>
+        <sys_mod_count>1</sys_mod_count>
+        <sys_name/>
+        <sys_package/>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 17:55:13</sys_updated_on>
+        <table_reference>false</table_reference>
+        <text_index>false</text_index>
+        <unique>false</unique>
+        <use_dependent_field>false</use_dependent_field>
+        <use_dynamic_default>false</use_dynamic_default>
+        <use_reference_qualifier>simple</use_reference_qualifier>
+        <virtual>false</virtual>
+        <virtual_type>script</virtual_type>
+        <widget/>
+        <write_roles/>
+        <xml_view>false</xml_view>
+    </sys_hub_action_input>
+    <sys_hub_action_input_action_instance action="delete_multiple" query="action_input=75eb9068515303107f44c0ff07840556"/>
     <sys_hub_action_input action="INSERT_OR_UPDATE">
         <active>true</active>
         <array>false</array>
@@ -1890,14 +2295,14 @@
         <sys_created_by>admin</sys_created_by>
         <sys_created_on>2026-09-07 20:04:21</sys_created_on>
         <sys_id>35462efb90c703107f440be6e09f1f98</sys_id>
-        <sys_mod_count>5</sys_mod_count>
+        <sys_mod_count>9</sys_mod_count>
         <sys_name/>
         <sys_package/>
         <sys_policy/>
         <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-07 20:40:20</sys_updated_on>
+        <sys_updated_on>2026-09-09 19:05:24</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
@@ -2141,6 +2546,29 @@
         <sys_update_name/>
         <sys_updated_by>admin</sys_updated_by>
         <sys_updated_on>2026-09-07 20:15:20</sys_updated_on>
+        <url/>
+        <url_target/>
+    </sys_documentation>
+    <sys_documentation action="INSERT_OR_UPDATE">
+        <element>hardware_records</element>
+        <help/>
+        <hint/>
+        <label>Hardware Records</label>
+        <language>en</language>
+        <name>var__m_sys_hub_action_input_a5462efb90c703107f440be6e09f1f5a</name>
+        <plural/>
+        <sys_class_name>sys_documentation</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2026-09-09 17:55:13</sys_created_on>
+        <sys_id>3deb9068515303107f44c0ff0784055a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name/>
+        <sys_package display_value="Enterprise Carbon AI Agent " source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
+        <sys_update_name/>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2026-09-09 17:55:13</sys_updated_on>
         <url/>
         <url_target/>
     </sys_documentation>
