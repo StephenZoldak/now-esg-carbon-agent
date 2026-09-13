@@ -12,7 +12,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>aedd12fb908703107f440be6e09f1f2e</sys_id>
-        <sys_mod_count>2</sys_mod_count>
+        <sys_mod_count>4</sys_mod_count>
         <sys_name/>
         <sys_overrides/>
         <sys_package display_value="Enterprise Carbon AI Agent " source="x_snc_enterprise_0">0a6f01e5ac0703107f44648dc013a462</sys_package>
@@ -20,11 +20,11 @@
         <sys_scope display_value="Enterprise Carbon AI Agent ">0a6f01e5ac0703107f44648dc013a462</sys_scope>
         <sys_update_name>par_dashboard_widget_aedd12fb908703107f440be6e09f1f2e</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2026-09-10 18:54:50</sys_updated_on>
+        <sys_updated_on>2026-09-13 22:12:47</sys_updated_on>
         <visualization/>
         <w>48</w>
         <widget_props/>
         <x>0</x>
-        <y>49</y>
+        <y>15</y>
     </par_dashboard_widget>
 </record_update>
